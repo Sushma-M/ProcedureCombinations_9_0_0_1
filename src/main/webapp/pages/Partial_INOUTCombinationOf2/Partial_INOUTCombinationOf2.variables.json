@@ -1,0 +1,91 @@
+{
+  "Procedure_INOUT_IN" : {
+    "_id" : "wm-Procedure_INOUT_IN-wm.ServiceVariable-1479355927063",
+    "name" : "Procedure_INOUT_IN",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ {
+      "target" : "GiveRequiredDateGetShippedDate",
+      "value" : "bind:Widgets.date_ShippedDate.datavalue",
+      "type" : "string"
+    }, {
+      "target" : "orderNumber",
+      "value" : "bind:Widgets.select_Order.datavalue",
+      "type" : "integer"
+    } ],
+    "type" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureInoutInResponse",
+    "service" : "classicmodels",
+    "operation" : "executeProcedure_INOUT_IN",
+    "operationId" : "ProcedureExecutionController_executeProcedure_INOUT_IN",
+    "operationType" : "get",
+    "serviceType" : "DataService",
+    "dataSet" : [ ],
+    "isList" : true,
+    "maxResults" : 20,
+    "designMaxResults" : 10,
+    "startUpdate" : false,
+    "autoUpdate" : false,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "controller" : "ProcedureExecution"
+  },
+  "Procedure_INOUT_INOUT" : {
+    "_id" : "wm-Procedure_INOUT_INOUT-wm.ServiceVariable-1479355943149",
+    "name" : "Procedure_INOUT_INOUT",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ {
+      "target" : "custnum",
+      "value" : "bind:Widgets.select_Cust1.datavalue",
+      "type" : "integer"
+    }, {
+      "target" : "customerLevel",
+      "value" : "bind:Widgets.text_CustLevel.datavalue",
+      "type" : "string"
+    } ],
+    "type" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureInoutInoutResponse",
+    "service" : "classicmodels",
+    "operation" : "executeProcedure_INOUT_INOUT",
+    "operationId" : "ProcedureExecutionController_executeProcedure_INOUT_INOUT",
+    "operationType" : "get",
+    "serviceType" : "DataService",
+    "dataSet" : [ ],
+    "isList" : true,
+    "maxResults" : 20,
+    "designMaxResults" : 10,
+    "startUpdate" : false,
+    "autoUpdate" : false,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "controller" : "ProcedureExecution"
+  },
+  "Procedure_INOUT_OUT" : {
+    "_id" : "wm-Procedure_INOUT_OUT-wm.ServiceVariable-1479356164486",
+    "name" : "Procedure_INOUT_OUT",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ {
+      "target" : "custnum",
+      "value" : "bind:Widgets.select_Cust.datavalue",
+      "type" : "integer"
+    } ],
+    "type" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureInoutOutResponse",
+    "service" : "classicmodels",
+    "operation" : "executeProcedure_INOUT_OUT",
+    "operationId" : "ProcedureExecutionController_executeProcedure_INOUT_OUT",
+    "operationType" : "get",
+    "serviceType" : "DataService",
+    "dataSet" : [ ],
+    "isList" : true,
+    "maxResults" : 20,
+    "designMaxResults" : 10,
+    "startUpdate" : false,
+    "autoUpdate" : true,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "controller" : "ProcedureExecution"
+  }
+}

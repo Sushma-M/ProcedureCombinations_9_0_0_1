@@ -1,0 +1,77 @@
+<wm-partial data-ng-controller="Partial_INCombinationOf2PageController" name="partial1"> 
+    <wm-tabs name="tabs2"> 
+        <wm-tabpane name="tabpane4" title="IN IN Combination"> 
+            <wm-layoutgrid name="layoutgrid1"> 
+                <wm-gridrow name="gridrow1"> 
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn1"> 
+                        <wm-composite name="composite3"> 
+                            <wm-label class="col-md-3 control-label" name="label3" caption="Employee Number"></wm-label> 
+                            <wm-container class="col-md-9" name="container3"> 
+                                <wm-select name="select_Emp" dataset="bind:Variables.LV_EmployeeData.dataSet" datafield="employeeNumber" displayexpression="bind:$[data[$i].employeeNumber]+' -- '+$[data[$i].firstName]"></wm-select> 
+                            </wm-container> 
+                        </wm-composite> 
+                        <wm-button class="btn-default" caption="Get Employee Details" type="button" margin="unset 0.5em" name="button_Data1" on-click="Variables.Procedure_IN_IN.invoke()"></wm-button> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn2"> 
+                        <wm-composite name="composite2"> 
+                            <wm-label class="col-md-3 control-label" name="label2" caption="Employee Name"></wm-label> 
+                            <wm-container class="col-md-9" name="container2"> 
+                                <wm-text name="text_Emp" placeholder="Enter the Display Name of Select Widget"></wm-text> 
+                            </wm-container> 
+                        </wm-composite> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow2"> 
+                    <wm-gridcolumn columnwidth="12" name="gridcolumn3"> 
+                        <wm-list listclass="list-group" template="true" itemsperrow="xs-1 sm-2 md-4 lg-4" class="list-card" dataset="bind:Variables.Procedure_IN_IN.dataSet" navigation="None" name="livelist_IN_IN"> 
+                            <wm-listtemplate layout="media" name="listtemplate1"> 
+                                <wm-card name="card1"> 
+                                    <wm-card-content fontsize="0.8" fontunit="em" name="card_content1"> 
+                                        <wm-layoutgrid columns="2" name="layoutgrid2"> 
+                                            <wm-gridrow name="gridrow3"> 
+                                                <wm-gridcolumn colwidth="6" columnwidth="12" padding="unset 1.25em" class="col-xs-6" name="gridcolumn6"> 
+                                                    <wm-label name="ID" caption="bind:Variables.Procedure_IN_IN.dataSet.employeeNumber" fontunit="em" class="text-muted p" margin="unset unset 0px unset" whitespace="nowrap"></wm-label> 
+                                                    <wm-label name="Name" caption="bind:Variables.Procedure_IN_IN.dataSet.firstName" fontunit="em" color="#000" class="h4" margin="0px unset" whitespace="nowrap"></wm-label> 
+                                                    <wm-label name="JobTitle" caption="bind:Variables.Procedure_IN_IN.dataSet.jobTitle" class="h5" margin="0px unset unset unset" whitespace="nowrap"></wm-label> 
+                                                    <wm-label name="Department" caption="bind:Variables.Procedure_IN_IN.dataSet.extension" class="p text-muted" margin="unset unset 0px unset" whitespace="nowrap"></wm-label> 
+                                                    <wm-label name="Location" caption="bind:Variables.Procedure_IN_IN.dataSet.officeCode" class="text-muted p" whitespace="nowrap"></wm-label> 
+                                                    <wm-anchor name="PhoneNumber" caption="bind:Variables.Procedure_IN_IN.dataSet.reportsTo" class="h5" hyperlink="tel:" margin="0px unset" whitespace="nowrap"></wm-anchor> 
+                                                    <wm-anchor name="EmailID" class="p text-muted" hyperlink="mailto://" caption="bind:Variables.Procedure_IN_IN.dataSet.email" whitespace="nowrap"></wm-anchor> 
+                                                </wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                        </wm-layoutgrid> 
+                                    </wm-card-content> 
+                                </wm-card> 
+                            </wm-listtemplate> 
+                        </wm-list> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+        </wm-tabpane> 
+        <wm-tabpane name="tabpane5" title="IN OUT Combination"> 
+            <wm-composite name="composite3_1"> 
+                <wm-label class="col-md-3 control-label" name="label8" caption="Select Customer Number"></wm-label> 
+                <wm-container class="col-md-9" name="container3_1"> 
+                    <wm-select name="select_Cust" dataset="bind:Variables.LV_CustomerData.dataSet" datafield="customerNumber" displayfield="customerNumber"></wm-select> 
+                </wm-container> 
+            </wm-composite> 
+            <wm-label padding="unset 0.5em" name="label9" caption="bind:'Product Will be shipped in: '+Variables.Procedure_IN_OUT.dataSet[$i].p_shipping" fontsize="1.4" fontunit="em"></wm-label> 
+        </wm-tabpane> 
+        <wm-tabpane name="tabpane6" title="IN INOUT Combination"> 
+            <wm-composite name="composite4"> 
+                <wm-label class="col-md-3 control-label" name="label10" caption="Select Customer Number"></wm-label> 
+                <wm-container class="col-md-9" name="container4"> 
+                    <wm-select name="select_INOUTCust" dataset="bind:Variables.LV_CustomerData.dataSet" datafield="customerNumber" displayfield="customerNumber"></wm-select> 
+                </wm-container> 
+            </wm-composite> 
+            <wm-composite name="composite5"> 
+                <wm-label class="col-md-3 control-label" name="label12" caption="Enter Customer Level"></wm-label> 
+                <wm-container class="col-md-9" name="container5"> 
+                    <wm-text name="text_CustLevel" placeholder="Enter Some Random Text"></wm-text> 
+                </wm-container> 
+            </wm-composite> 
+            <wm-button class="btn-default" caption="Get Customer Level" type="button" margin="unset 0.5em" name="button_Data" on-click="Variables.Procedure_IN_INOUT.invoke()"></wm-button> 
+            <wm-label padding="unset 0.5em" name="label11" caption="bind:'Customer Level Based on Credit Limit is: '+Variables.Procedure_IN_INOUT.dataSet[$i].customerLevel" fontsize="1.4" fontunit="em" color="#ff9600"></wm-label> 
+        </wm-tabpane> 
+    </wm-tabs> 
+</wm-partial>

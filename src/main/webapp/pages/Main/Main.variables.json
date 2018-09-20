@@ -1,0 +1,52 @@
+{
+  "Procedure_IN_IsList" : {
+    "_id" : "wm-Procedure_IN_IsList-wm.ServiceVariable-1479356470327",
+    "name" : "Procedure_IN_IsList",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ {
+      "target" : "custNumber",
+      "value" : "bind:Widgets.select_CustomerNumber.datavalue",
+      "type" : "string"
+    } ],
+    "type" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureInIsListResponseContent",
+    "service" : "classicmodels",
+    "operation" : "executeProcedure_IN_IsList",
+    "operationId" : "ProcedureExecutionController_executeProcedure_IN_IsList",
+    "operationType" : "get",
+    "serviceType" : "DataService",
+    "dataSet" : [ ],
+    "isList" : true,
+    "maxResults" : 20,
+    "designMaxResults" : 10,
+    "startUpdate" : false,
+    "autoUpdate" : true,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "controller" : "ProcedureExecution"
+  },
+  "Procedure_WithoutAnyParams" : {
+    "_id" : "wm-Procedure_WithoutAnyParams-wm.ServiceVariable-1479356925901",
+    "name" : "Procedure_WithoutAnyParams",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ ],
+    "type" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureWithoutAnyParamsResponseContent",
+    "service" : "classicmodels",
+    "operation" : "executeProcedure_WithoutAnyParams",
+    "operationId" : "ProcedureExecutionController_executeProcedure_WithoutAnyParams",
+    "operationType" : "get",
+    "serviceType" : "DataService",
+    "dataSet" : [ ],
+    "isList" : true,
+    "maxResults" : 20,
+    "designMaxResults" : 10,
+    "startUpdate" : true,
+    "autoUpdate" : true,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "controller" : "ProcedureExecution"
+  }
+}

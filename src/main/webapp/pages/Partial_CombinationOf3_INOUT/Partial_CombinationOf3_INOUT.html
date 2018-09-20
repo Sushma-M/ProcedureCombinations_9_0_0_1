@@ -1,0 +1,187 @@
+<wm-partial data-ng-controller="Partial_CombinationOf3_INOUTPageController" name="partial1"> 
+    <wm-tabs name="tabs1"> 
+        <wm-tabpane name="tabpane1" title="INOUT_IN_IN Combination"> 
+            <wm-form errormessage="" captionposition="top" title="bind:'Your Result is: '+Variables.Procedure_INOUT_IN_IN.dataSet[$i].result1" enctype="application/x-www-form-urlencoded" method="get" dataset="bind:Variables.Procedure_INOUT_IN_IN.dataSet" captionalign="left" name="form_INOUT_IN_IN"> 
+                <wm-layoutgrid columns="2" name="layoutgrid1"> 
+                    <wm-gridrow name="gridrow4"> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn4"> 
+                            <wm-form-field name="numerator" displayname="Numerator" key="numerator" type="integer" show="true" widget="number" inputtype="number" placeholder="Enter value"></wm-form-field> 
+                        </wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn5"> 
+                            <wm-form-field name="denominator" displayname="Denominator" key="denominator" type="integer" show="true" widget="number" inputtype="number" placeholder="Enter value"></wm-form-field> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                    <wm-gridrow name="gridrow5"> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn6"> 
+                            <wm-form-field name="result1" displayname="Result1" key="result1" type="integer" show="true" widget="number" inputtype="number" placeholder="Enter value"></wm-form-field> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                </wm-layoutgrid> 
+                <wm-buttongroup horizontalalign="right" class="form-action col-md-12" name="buttongroup1"> 
+                    <wm-button caption="Get Result" type="submit" class="btn-primary" name="button3" on-click="Variables.Procedure_INOUT_IN_IN.invoke()"></wm-button> 
+                </wm-buttongroup> 
+            </wm-form> 
+        </wm-tabpane> 
+        <wm-tabpane name="tabpane2" title="INOUT_IN_OUT Combination"> 
+            <wm-form errormessage="" captionposition="top" title="bind:'Your Result is:'+Variables.Procedure_INOUT_IN_OUT.dataSet[$i].result1+', and Numerator:'+Variables.Procedure_INOUT_IN_OUT.dataSet[$i].numerator" enctype="application/x-www-form-urlencoded" method="get" dataset="bind:Variables.Procedure_INOUT_IN_OUT.dataSet" captionalign="left" name="form_INOUT_IN_OUT"> 
+                <wm-layoutgrid columns="2" name="layoutgrid2"> 
+                    <wm-gridrow name="gridrow3"> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn4_1"> 
+                            <wm-form-field readonly="false" name="numerator" displayname="Numerator" key="numerator" type="integer" show="true" widget="number"></wm-form-field> 
+                        </wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn5_1"> 
+                            <wm-form-field readonly="false" name="denominator" displayname="Denominator" key="denominator" type="integer" show="true" widget="number"></wm-form-field> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                </wm-layoutgrid> 
+                <wm-buttongroup horizontalalign="right" class="form-action col-md-12" name="buttongroup2"> 
+                    <wm-button caption="Get Result" type="submit" class="btn-primary" name="button4" on-click="Variables.Procedure_INOUT_IN_OUT.invoke()"></wm-button> 
+                </wm-buttongroup> 
+            </wm-form> 
+        </wm-tabpane> 
+        <wm-tabpane name="tabpane3" title="INOUT_IN_INOUT Combination"> 
+            <wm-form errormessage="" captionposition="top" title="bind:'Your Result is: '+Variables.Procedure_INOUT_IN_INOUT.dataSet[$i].result1+', and Denominator is: '+Variables.Procedure_INOUT_IN_INOUT.dataSet[$i].denominator" enctype="application/x-www-form-urlencoded" method="get" dataset="bind:Variables.Procedure_INOUT_IN_INOUT.dataSet" captionalign="left" name="form_INOUT_IN_INOUT"> 
+                <wm-layoutgrid columns="2" name="layoutgrid3"> 
+                    <wm-gridrow name="gridrow4_1"> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn6_1"> 
+                            <wm-form-field name="numerator" displayname="Numerator" key="numerator" type="integer" show="true" widget="number" inputtype="number" placeholder="Enter value"></wm-form-field> 
+                        </wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn7"> 
+                            <wm-form-field name="denominator" displayname="Denominator" key="denominator" type="integer" show="true" widget="number" inputtype="number" placeholder="Enter value"></wm-form-field> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                    <wm-gridrow name="gridrow5_1"> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn8"> 
+                            <wm-form-field name="result1" displayname="Result1" key="result1" type="number" show="true" widget="number" inputtype="number" placeholder="Enter value"></wm-form-field> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                </wm-layoutgrid> 
+                <wm-buttongroup horizontalalign="right" class="form-action col-md-12" name="buttongroup3"> 
+                    <wm-button caption="Get Result" type="submit" class="btn-primary" name="button5" on-click="Variables.Procedure_INOUT_IN_INOUT.invoke()"></wm-button> 
+                </wm-buttongroup> 
+            </wm-form> 
+        </wm-tabpane> 
+        <wm-tabpane name="tabpane4" title="INOUT_OUT_IN Combination"> 
+            <wm-form errormessage="" captionposition="top" title="bind:'Your Result is: '+Variables.Procedure_INOUT_OUT_IN.dataSet[$i].result1+', and Numerator is: '+Variables.Procedure_INOUT_OUT_IN.dataSet[$i].numerator" enctype="application/x-www-form-urlencoded" method="get" dataset="bind:Variables.Procedure_INOUT_OUT_IN.dataSet" captionalign="left" name="form_INOUT_OUT_IN"> 
+                <wm-layoutgrid columns="2" name="layoutgrid4"> 
+                    <wm-gridrow name="gridrow6"> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn9"> 
+                            <wm-form-field readonly="false" name="numerator" displayname="Numerator" key="numerator" type="integer" show="true" widget="number"></wm-form-field> 
+                        </wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn10"> 
+                            <wm-form-field readonly="false" name="denominator" displayname="Denominator" key="denominator" type="integer" show="true" widget="number"></wm-form-field> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                </wm-layoutgrid> 
+                <wm-buttongroup horizontalalign="right" class="form-action col-md-12" name="buttongroup4"> 
+                    <wm-button caption="Get Result" type="submit" class="btn-primary" name="button6" on-click="Variables.Procedure_INOUT_OUT_IN.invoke()"></wm-button> 
+                </wm-buttongroup> 
+            </wm-form> 
+        </wm-tabpane> 
+        <wm-tabpane name="tabpane5" title="INOUT_OUT_OUT Combination"> 
+            <wm-layoutgrid name="layoutgrid5"> 
+                <wm-gridrow name="gridrow7"> 
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn11"> 
+                        <wm-composite name="composite1"> 
+                            <wm-label class="col-md-3 control-label" name="label1" caption="Select Order Date"></wm-label> 
+                            <wm-container class="col-md-9" name="container1"> 
+                                <wm-select name="select_OrderDate" dataset="bind:Variables.LV_Orders.dataSet" datafield="orderDate" displayfield="orderDate"></wm-select> 
+                            </wm-container> 
+                        </wm-composite> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn12"></wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow8"> 
+                    <wm-gridcolumn columnwidth="8" name="gridcolumn13"> 
+                        <wm-label padding="unset 0.5em" name="label2" fontsize="1.4" fontunit="em" caption="bind:'<b>Ordered Date: </b>'+Variables.Procedure_INOUT_OUT_OUT.dataSet[$i].ordrDate+', <b>Order Status: </b>'+Variables.Procedure_INOUT_OUT_OUT.dataSet[$i].ordrstatus+', <b>Required Date: </b>'+Variables.Procedure_INOUT_OUT_OUT.dataSet[$i].reqDate"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn14"></wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+        </wm-tabpane> 
+        <wm-tabpane name="tabpane6" title="INOUT_OUT_INOUT Combination"> 
+            <wm-form errormessage="" captionposition="top" title="bind:'Result is: '+Variables.Procedure_INOUT_OUT_INOUT.dataSet[$i].result1+',  Numerator: '+Variables.Procedure_INOUT_OUT_INOUT.dataSet[$i].numerator+',  Denominator is: '+Variables.Procedure_INOUT_OUT_INOUT.dataSet[$i].denominator" enctype="application/x-www-form-urlencoded" method="get" dataset="bind:Variables.Procedure_INOUT_OUT_INOUT.dataSet" captionalign="left" name="form_INOUT_OUT_INOUT"> 
+                <wm-layoutgrid columns="2" name="layoutgrid6"> 
+                    <wm-gridrow name="gridrow9"> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn15"> 
+                            <wm-form-field readonly="false" name="numerator" displayname="Numerator" key="numerator" type="integer" show="true" widget="number"></wm-form-field> 
+                        </wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn16"> 
+                            <wm-form-field readonly="false" name="denominator" displayname="Denominator" key="denominator" type="integer" show="true" widget="number"></wm-form-field> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                </wm-layoutgrid> 
+                <wm-buttongroup horizontalalign="right" class="form-action col-md-12" name="buttongroup5"> 
+                    <wm-button caption="Get Result" type="submit" class="btn-primary" name="button7" on-click="Variables.Procedure_INOUT_OUT_INOUT.invoke()"></wm-button> 
+                </wm-buttongroup> 
+            </wm-form> 
+        </wm-tabpane> 
+        <wm-tabpane name="tabpane7" title="INOUT_INOUT_IN Combination"> 
+            <wm-form errormessage="" captionposition="top" title="bind:'Count1 Value: '+Variables.Procedure_INOUT_INOUT_IN.dataSet[$i].count1+', Count2 Value: '+Variables.Procedure_INOUT_INOUT_IN.dataSet[$i].count2+', Count3 Value: '+Variables.Procedure_INOUT_INOUT_IN.dataSet[$i].count3" enctype="application/x-www-form-urlencoded" method="get" dataset="bind:Variables.Procedure_INOUT_INOUT_IN.dataSet" captionalign="left" name="form_INOUT_INOUT_IN"> 
+                <wm-layoutgrid columns="2" name="layoutgrid7"> 
+                    <wm-gridrow name="gridrow10"> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn17"> 
+                            <wm-form-field readonly="false" name="count1" displayname="Count1" key="count1" type="integer" show="true" widget="number"></wm-form-field> 
+                        </wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn18"> 
+                            <wm-form-field readonly="false" name="count2" displayname="Count2" key="count2" type="integer" show="true" widget="number"></wm-form-field> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                    <wm-gridrow name="gridrow11"> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn19"> 
+                            <wm-form-field readonly="false" name="count3" displayname="Count3" key="count3" type="integer" show="true" widget="number"></wm-form-field> 
+                        </wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn20"> 
+                            <wm-form-field readonly="false" name="inc" displayname="Inc" key="inc" type="integer" show="true" widget="number"></wm-form-field> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                </wm-layoutgrid> 
+                <wm-buttongroup horizontalalign="right" class="form-action col-md-12" name="buttongroup6"> 
+                    <wm-button caption="Reset" type="reset" class="btn-secondary" name="button6_1"></wm-button> 
+                    <wm-button caption="Get Count's" type="submit" class="btn-primary" name="button8"></wm-button> 
+                </wm-buttongroup> 
+            </wm-form> 
+        </wm-tabpane> 
+        <wm-tabpane name="tabpane8" title="INOUT_INOUT_OUT Combination"> 
+            <wm-form errormessage="" captionposition="top" title="bind:'Result is: '+Variables.Procedure_INOUT_INOUT_OUT.dataSet[$i].result1+',  Numerator is: '+Variables.Procedure_INOUT_INOUT_OUT.dataSet[$i].numerator+', Denominator is: '+Variables.Procedure_INOUT_INOUT_OUT.dataSet[$i].denominator" enctype="application/x-www-form-urlencoded" method="get" dataset="bind:Variables.Procedure_INOUT_INOUT_OUT.dataSet" captionalign="left" name="form_INOUT_INOUT_OUT"> 
+                <wm-layoutgrid columns="2" name="layoutgrid8"> 
+                    <wm-gridrow name="gridrow12"> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn21"> 
+                            <wm-form-field readonly="false" name="numerator" displayname="Numerator" key="numerator" type="integer" show="true" widget="number"></wm-form-field> 
+                        </wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn22"> 
+                            <wm-form-field readonly="false" name="denominator" displayname="Denominator" key="denominator" type="integer" show="true" widget="number"></wm-form-field> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                </wm-layoutgrid> 
+                <wm-buttongroup horizontalalign="right" class="form-action col-md-12" name="buttongroup7"> 
+                    <wm-button caption="Reset" type="reset" class="btn-secondary" name="button8_1"></wm-button> 
+                    <wm-button caption="Save" type="submit" class="btn-primary" name="button10"></wm-button> 
+                </wm-buttongroup> 
+            </wm-form> 
+        </wm-tabpane> 
+        <wm-tabpane name="tabpane9" title="INOUT_INOUT_INOUT Combination"> 
+            <wm-form errormessage="" captionposition="top" title="bind:'Result is: '+Variables.Procedure_INOUT_INOUT_INOUT.dataSet[$i].result1+', Numerator is: '+Variables.Procedure_INOUT_INOUT_INOUT.dataSet[$i].numerator+', Denominator is: '+Variables.Procedure_INOUT_INOUT_INOUT.dataSet[$i].denominator" enctype="application/x-www-form-urlencoded" method="get" dataset="bind:Variables.Procedure_INOUT_INOUT_INOUT.dataSet" captionalign="left" name="form_INOUT_INOUT_INOUT"> 
+                <wm-layoutgrid columns="2" name="layoutgrid9"> 
+                    <wm-gridrow name="gridrow13"> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn23"> 
+                            <wm-form-field readonly="false" name="numerator" displayname="Numerator" key="numerator" type="integer" show="true" widget="number"></wm-form-field> 
+                        </wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn24"> 
+                            <wm-form-field readonly="false" name="denominator" displayname="Denominator" key="denominator" type="integer" show="true" widget="number"></wm-form-field> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                    <wm-gridrow name="gridrow14"> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn25"> 
+                            <wm-form-field readonly="false" name="result1" displayname="Result1" key="result1" type="number" show="true" widget="number"></wm-form-field> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                </wm-layoutgrid> 
+                <wm-buttongroup horizontalalign="right" class="form-action col-md-12" name="buttongroup8"> 
+                    <wm-button caption="Reset" type="reset" class="btn-secondary" name="button10_1"></wm-button> 
+                    <wm-button caption="Save" type="submit" class="btn-primary" name="button12"></wm-button> 
+                </wm-buttongroup> 
+            </wm-form> 
+        </wm-tabpane> 
+    </wm-tabs> 
+</wm-partial>

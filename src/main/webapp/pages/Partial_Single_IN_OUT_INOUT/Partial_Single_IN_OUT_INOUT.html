@@ -1,0 +1,35 @@
+<wm-partial data-ng-controller="Partial_Single_IN_OUT_INOUTPageController" name="partial1"> 
+    <wm-tabs name="tabs1"> 
+        <wm-tabpane name="tabpane1" title="IN Param"> 
+            <wm-composite name="composite3"> 
+                <wm-label class="col-md-3 control-label" name="label5" caption="Select State"></wm-label> 
+                <wm-container class="col-md-9" name="container3"> 
+                    <wm-select name="select_State" dataset="bind:Variables.LV_Offices.dataSet" datafield="country" displayfield="country"></wm-select> 
+                </wm-container> 
+            </wm-composite> 
+            <wm-table title="" dataset="bind:Variables.Procedure_IN_STRING.dataSet" navigation="Basic" name="grid_IN"> 
+                <wm-table-column binding="phone" caption="Phone" pcdisplay="true" mobiledisplay="true" readonly="true"></wm-table-column> 
+                <wm-table-column binding="officeCode" caption="Office Code" pcdisplay="true" mobiledisplay="true" readonly="true"></wm-table-column> 
+                <wm-table-column binding="territory" caption="Territory" pcdisplay="true" mobiledisplay="true" readonly="true"></wm-table-column> 
+                <wm-table-column binding="postalCode" caption="Postal Code" pcdisplay="true" mobiledisplay="true" readonly="true"></wm-table-column> 
+                <wm-table-column binding="state" caption="State" pcdisplay="true" mobiledisplay="true" readonly="true"></wm-table-column> 
+                <wm-table-column binding="addressLine2" caption="Address Line2" pcdisplay="true" mobiledisplay="true" readonly="true"></wm-table-column> 
+                <wm-table-column binding="addressLine1" caption="Address Line1" pcdisplay="true" mobiledisplay="true" readonly="true"></wm-table-column> 
+                <wm-table-column binding="country" caption="Country" pcdisplay="true" mobiledisplay="true" readonly="true"></wm-table-column> 
+                <wm-table-column binding="city" caption="City" pcdisplay="true" mobiledisplay="true" readonly="true"></wm-table-column> 
+            </wm-table> 
+        </wm-tabpane> 
+        <wm-tabpane name="tabpane2" title="OUT Param"> 
+            <wm-label padding="unset 0.5em" name="label2" caption="bind:'Email of the EmployeeNumber: <b>1002 </b>is ::<b>'+Variables.Procedure_OUT.dataSet[$i].empEmail+'</b>'" fontsize="1.4" fontunit="em"></wm-label> 
+        </wm-tabpane> 
+        <wm-tabpane name="tabpane3" title="INOUT Param"> 
+            <wm-composite name="composite3_1"> 
+                <wm-label class="col-md-3 control-label" name="label5_1" caption="Employee Number"></wm-label> 
+                <wm-container class="col-md-9" name="container3_1"> 
+                    <wm-select name="select_EmpNum" dataset="bind:Variables.LV_EmployeeData.dataSet" datafield="employeeNumber" displayfield="employeeNumber"></wm-select> 
+                </wm-container> 
+            </wm-composite> 
+            <wm-label padding="unset 0.5em" name="label4" caption="bind:'Selected Employee Number: '+Variables.Procedure_INOUT.dataSet[$i].empNumber" fontsize="1.4" fontunit="em"></wm-label> 
+        </wm-tabpane> 
+    </wm-tabs> 
+</wm-partial>

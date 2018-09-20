@@ -1,0 +1,48 @@
+<wm-partial data-ng-controller="Partial_OUTCombinationOf2PageController" name="partial1"> 
+    <wm-tabs name="tabs3"> 
+        <wm-tabpane name="tabpane7" title="OUT IN Combination"> 
+            <wm-layoutgrid name="layoutgrid1"> 
+                <wm-gridrow name="gridrow1"> 
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn1"> 
+                        <wm-composite name="composite1"> 
+                            <wm-label class="col-md-3 control-label" name="label1" caption="Select Employee Number"></wm-label> 
+                            <wm-container class="col-md-9" name="container1"> 
+                                <wm-select name="select_Emp" dataset="bind:Variables.LV_EmployeeData.dataSet" datafield="employeeNumber" displayfield="employeeNumber"></wm-select> 
+                            </wm-container> 
+                        </wm-composite> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn2"></wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow2"> 
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn3"> 
+                        <wm-label padding="unset 0.5em" name="label2" fontsize="1.4" fontunit="em" caption="bind:'<b>Employee First Name: </b>'+Variables.Procedure_OUT_IN.dataSet[$i].empFName"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn4"></wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+        </wm-tabpane> 
+        <wm-tabpane name="tabpane8" title="OUT OUT Combination"> 
+            <wm-label padding="unset 0.5em" name="label3" caption="bind:'Shows Employee FirstName: &quot;<b>'+Variables.Procedure_OUT_OUT.dataSet[$i].empFName+'</b>&quot; and Employee Last Name: &quot;<b>'+Variables.Procedure_OUT_OUT.dataSet[$i].empLName+'</b>&quot;'" fontsize="1.4" fontunit="em"></wm-label> 
+        </wm-tabpane> 
+        <wm-tabpane name="tabpane9" title="OUT INOUT Combination"> 
+            <wm-layoutgrid name="layoutgrid2"> 
+                <wm-gridrow name="gridrow3"> 
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn5"> 
+                        <wm-composite name="composite2"> 
+                            <wm-label class="col-md-3 control-label" name="label4" caption="Select Product Lines"></wm-label> 
+                            <wm-container class="col-md-9" name="container2"> 
+                                <wm-select name="select_ProductLines" dataset="bind:Variables.LV_ProductLineData.dataSet" datafield="productLine" displayfield="productLine"></wm-select> 
+                            </wm-container> 
+                        </wm-composite> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn6"></wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow4"> 
+                    <wm-gridcolumn columnwidth="10" name="gridcolumn7"> 
+                        <wm-label padding="unset 0.5em" name="label5" caption="bind:'<b>Product Description: </b>'+Variables.Procedure_OUT_INOUT.dataSet[$i].txtDesc" fontsize="1.2" fontunit="em"></wm-label> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+        </wm-tabpane> 
+    </wm-tabs> 
+</wm-partial>

@@ -1,0 +1,2865 @@
+{
+  "Procedure_getProductDetails" : {
+    "name" : "Procedure_getProductDetails",
+    "description" : "egrzdvzf",
+    "version" : "V1",
+    "procedureString" : "call classicmodels.getProductDetails(:prodLine)",
+    "parameters" : [ {
+      "name" : "prodLine",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "Classic Cars",
+      "required" : false,
+      "parameterType" : "IN"
+    } ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : null
+    },
+    "response" : {
+      "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureGetProductDetailsResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "SINGLE",
+      "properties" : [ {
+        "name" : "content",
+        "fieldName" : "content",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "CUSTOM",
+          "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureGetProductDetailsResponseContent",
+          "list" : true,
+          "properties" : [ {
+            "name" : "ProductDesc",
+            "fieldName" : "productDesc",
+            "optional" : false,
+            "fieldType" : {
+              "type" : "PRIMITIVE",
+              "typeRef" : "java.lang.String",
+              "list" : false
+            }
+          }, {
+            "name" : "quantityInStock",
+            "fieldName" : "quantityInStock",
+            "optional" : false,
+            "fieldType" : {
+              "type" : "PRIMITIVE",
+              "typeRef" : "java.lang.Integer",
+              "list" : false
+            }
+          }, {
+            "name" : "buyPrice",
+            "fieldName" : "buyPrice",
+            "optional" : false,
+            "fieldType" : {
+              "type" : "PRIMITIVE",
+              "typeRef" : "java.lang.Double",
+              "list" : false
+            }
+          } ]
+        }
+      } ]
+    }
+  },
+  "Procedure_IN" : {
+    "name" : "Procedure_IN",
+    "description" : "Only\nIN - Int",
+    "version" : "V1",
+    "procedureString" : "call getEmpDetails(:empNumber)",
+    "parameters" : [ {
+      "name" : "empNumber",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "1002",
+      "required" : false,
+      "parameterType" : "IN"
+    } ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : null
+    },
+    "response" : {
+      "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureInResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "SINGLE",
+      "properties" : [ {
+        "name" : "content",
+        "fieldName" : "content",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "CUSTOM",
+          "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureInResponseContent",
+          "list" : true,
+          "properties" : [ {
+            "name" : "employeeNumber",
+            "fieldName" : "employeeNumber",
+            "optional" : false,
+            "fieldType" : {
+              "type" : "PRIMITIVE",
+              "typeRef" : "java.lang.Integer",
+              "list" : false
+            }
+          }, {
+            "name" : "lastName",
+            "fieldName" : "lastName",
+            "optional" : false,
+            "fieldType" : {
+              "type" : "PRIMITIVE",
+              "typeRef" : "java.lang.String",
+              "list" : false
+            }
+          }, {
+            "name" : "firstName",
+            "fieldName" : "firstName",
+            "optional" : false,
+            "fieldType" : {
+              "type" : "PRIMITIVE",
+              "typeRef" : "java.lang.String",
+              "list" : false
+            }
+          }, {
+            "name" : "extension",
+            "fieldName" : "extension",
+            "optional" : false,
+            "fieldType" : {
+              "type" : "PRIMITIVE",
+              "typeRef" : "java.lang.String",
+              "list" : false
+            }
+          }, {
+            "name" : "email",
+            "fieldName" : "email",
+            "optional" : false,
+            "fieldType" : {
+              "type" : "PRIMITIVE",
+              "typeRef" : "java.lang.String",
+              "list" : false
+            }
+          }, {
+            "name" : "officeCode",
+            "fieldName" : "officeCode",
+            "optional" : false,
+            "fieldType" : {
+              "type" : "PRIMITIVE",
+              "typeRef" : "java.lang.String",
+              "list" : false
+            }
+          }, {
+            "name" : "reportsTo",
+            "fieldName" : "reportsTo",
+            "optional" : false,
+            "fieldType" : {
+              "type" : "PRIMITIVE",
+              "typeRef" : "java.lang.String",
+              "list" : false
+            }
+          }, {
+            "name" : "jobTitle",
+            "fieldName" : "jobTitle",
+            "optional" : false,
+            "fieldType" : {
+              "type" : "PRIMITIVE",
+              "typeRef" : "java.lang.String",
+              "list" : false
+            }
+          } ]
+        }
+      } ]
+    }
+  },
+  "Procedure_IN_IN" : {
+    "name" : "Procedure_IN_IN",
+    "description" : "IN - STRING\nIN - INT",
+    "version" : "V1",
+    "procedureString" : "call getEmployeesByNumber(:empFName,:empNumber)",
+    "parameters" : [ {
+      "name" : "empFName",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "Diane",
+      "required" : false,
+      "parameterType" : "IN"
+    }, {
+      "name" : "empNumber",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "1002",
+      "required" : false,
+      "parameterType" : "IN"
+    } ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : null
+    },
+    "response" : {
+      "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureInInResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "SINGLE",
+      "properties" : [ {
+        "name" : "content",
+        "fieldName" : "content",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "CUSTOM",
+          "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureInInResponseContent",
+          "list" : true,
+          "properties" : [ {
+            "name" : "employeeNumber",
+            "fieldName" : "employeeNumber",
+            "optional" : false,
+            "fieldType" : {
+              "type" : "PRIMITIVE",
+              "typeRef" : "java.lang.Integer",
+              "list" : false
+            }
+          }, {
+            "name" : "lastName",
+            "fieldName" : "lastName",
+            "optional" : false,
+            "fieldType" : {
+              "type" : "PRIMITIVE",
+              "typeRef" : "java.lang.String",
+              "list" : false
+            }
+          }, {
+            "name" : "firstName",
+            "fieldName" : "firstName",
+            "optional" : false,
+            "fieldType" : {
+              "type" : "PRIMITIVE",
+              "typeRef" : "java.lang.String",
+              "list" : false
+            }
+          }, {
+            "name" : "extension",
+            "fieldName" : "extension",
+            "optional" : false,
+            "fieldType" : {
+              "type" : "PRIMITIVE",
+              "typeRef" : "java.lang.String",
+              "list" : false
+            }
+          }, {
+            "name" : "email",
+            "fieldName" : "email",
+            "optional" : false,
+            "fieldType" : {
+              "type" : "PRIMITIVE",
+              "typeRef" : "java.lang.String",
+              "list" : false
+            }
+          }, {
+            "name" : "officeCode",
+            "fieldName" : "officeCode",
+            "optional" : false,
+            "fieldType" : {
+              "type" : "PRIMITIVE",
+              "typeRef" : "java.lang.String",
+              "list" : false
+            }
+          }, {
+            "name" : "reportsTo",
+            "fieldName" : "reportsTo",
+            "optional" : false,
+            "fieldType" : {
+              "type" : "PRIMITIVE",
+              "typeRef" : "java.lang.String",
+              "list" : false
+            }
+          }, {
+            "name" : "jobTitle",
+            "fieldName" : "jobTitle",
+            "optional" : false,
+            "fieldType" : {
+              "type" : "PRIMITIVE",
+              "typeRef" : "java.lang.String",
+              "list" : false
+            }
+          } ]
+        }
+      } ]
+    }
+  },
+  "Procedure_IN_IN_IN" : {
+    "name" : "Procedure_IN_IN_IN",
+    "description" : "IN- INT\nIN- INT\nIN- STRING",
+    "version" : "V1",
+    "procedureString" : "call insert_article_tags(:art_id, :tag_id, :blnak)",
+    "parameters" : [ {
+      "name" : "art_id",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "1",
+      "required" : false,
+      "parameterType" : "IN"
+    }, {
+      "name" : "tag_id",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "4",
+      "required" : false,
+      "parameterType" : "IN"
+    }, {
+      "name" : "blnak",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "test2",
+      "required" : false,
+      "parameterType" : "IN"
+    } ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : null
+    },
+    "response" : {
+      "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureInInInResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "SINGLE",
+      "properties" : [ {
+        "name" : "content",
+        "fieldName" : "content",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "CUSTOM",
+          "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureInInInResponseContent",
+          "list" : true,
+          "properties" : [ {
+            "name" : "msg",
+            "fieldName" : "msg",
+            "optional" : false,
+            "fieldType" : {
+              "type" : "PRIMITIVE",
+              "typeRef" : "java.lang.String",
+              "list" : false
+            }
+          } ]
+        }
+      } ]
+    }
+  },
+  "Procedure_IN_IN_INOUT" : {
+    "name" : "Procedure_IN_IN_INOUT",
+    "description" : "IN - DATE\nIN - INT \nINOUT - DATE",
+    "version" : "V1",
+    "procedureString" : "CALL GetShippedDate3_InInInOut(:reqDate,:ordNumber,:shipDate)",
+    "parameters" : [ {
+      "name" : "reqDate",
+      "type" : "date",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "2003-01-13",
+      "required" : false,
+      "parameterType" : "IN"
+    }, {
+      "name" : "ordNumber",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "10100",
+      "required" : false,
+      "parameterType" : "IN"
+    }, {
+      "name" : "shipDate",
+      "type" : "date",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "2003-01-10",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    } ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : null
+    },
+    "response" : {
+      "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureInInInoutResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "SINGLE",
+      "properties" : [ {
+        "name" : "shipDate",
+        "fieldName" : "shipDate",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.sql.Date",
+          "list" : false
+        }
+      } ]
+    }
+  },
+  "Procedure_IN_IN_OUT" : {
+    "name" : "Procedure_IN_IN_OUT",
+    "description" : "IN - DATE\nIN - INT\nOUT - DATE",
+    "version" : "V1",
+    "procedureString" : "call classicmodels.getShippedDate(:RequiredDate,:OrderNumber, :shipDate)",
+    "parameters" : [ {
+      "name" : "RequiredDate",
+      "type" : "date",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "2003-01-18",
+      "required" : false,
+      "parameterType" : "IN"
+    }, {
+      "name" : "OrderNumber",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "10102",
+      "required" : false,
+      "parameterType" : "IN"
+    }, {
+      "name" : "shipDate",
+      "type" : "date",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    } ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : null
+    },
+    "response" : {
+      "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureInInOutResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "SINGLE",
+      "properties" : [ {
+        "name" : "shipDate",
+        "fieldName" : "shipDate",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.sql.Date",
+          "list" : false
+        }
+      } ]
+    }
+  },
+  "Procedure_IN_INOUT" : {
+    "name" : "Procedure_IN_INOUT",
+    "description" : "IN - INT\nINOUT - STRING",
+    "version" : "V1",
+    "procedureString" : "call getCustomerLevel_In_Inout(:custnum,:customerLevel)",
+    "parameters" : [ {
+      "name" : "custnum",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "103",
+      "required" : false,
+      "parameterType" : "IN"
+    }, {
+      "name" : "customerLevel",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "xxx",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    } ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : null
+    },
+    "response" : {
+      "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureInInoutResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "SINGLE",
+      "properties" : [ {
+        "name" : "customerLevel",
+        "fieldName" : "customerLevel",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      } ]
+    }
+  },
+  "Procedure_IN_INOUT_IN" : {
+    "name" : "Procedure_IN_INOUT_IN",
+    "description" : "IN - INT\nINOUT - INT\nIN - INT",
+    "version" : "V1",
+    "procedureString" : "call Divide3(:numerator,:res,:denominator)",
+    "parameters" : [ {
+      "name" : "numerator",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "21",
+      "required" : false,
+      "parameterType" : "IN"
+    }, {
+      "name" : "res",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "6",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    }, {
+      "name" : "denominator",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "3",
+      "required" : false,
+      "parameterType" : "IN"
+    } ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : null
+    },
+    "response" : {
+      "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureInInoutInResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "SINGLE",
+      "properties" : [ {
+        "name" : "res",
+        "fieldName" : "res",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Integer",
+          "list" : false
+        }
+      } ]
+    }
+  },
+  "Procedure_IN_INOUT_INOUT" : {
+    "name" : "Procedure_IN_INOUT_INOUT",
+    "description" : "IN - DATE\nINOUT - INT\nINOUT - DATE",
+    "version" : "V1",
+    "procedureString" : "call GetShippedDate4(:reqDate,:ordNumber,:shipDate)",
+    "parameters" : [ {
+      "name" : "reqDate",
+      "type" : "date",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "2003-01-13",
+      "required" : false,
+      "parameterType" : "IN"
+    }, {
+      "name" : "ordNumber",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "10100",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    }, {
+      "name" : "shipDate",
+      "type" : "date",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "2003-01-10",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    } ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : null
+    },
+    "response" : {
+      "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureInInoutInoutResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "SINGLE",
+      "properties" : [ {
+        "name" : "ordNumber",
+        "fieldName" : "ordNumber",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Integer",
+          "list" : false
+        }
+      }, {
+        "name" : "shipDate",
+        "fieldName" : "shipDate",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.sql.Date",
+          "list" : false
+        }
+      } ]
+    }
+  },
+  "Procedure_IN_INOUT_OUT" : {
+    "name" : "Procedure_IN_INOUT_OUT",
+    "description" : "IN - DATE\nINOUT- INT \nOUT - DATE",
+    "version" : "V1",
+    "procedureString" : "call getShippedDate_In_InOut_Out(:reqDate,:ordNumber,:shipDate)",
+    "parameters" : [ {
+      "name" : "reqDate",
+      "type" : "date",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "2003-01-13",
+      "required" : false,
+      "parameterType" : "IN"
+    }, {
+      "name" : "ordNumber",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "10100",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    }, {
+      "name" : "shipDate",
+      "type" : "date",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    } ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : null
+    },
+    "response" : {
+      "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureInInoutOutResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "SINGLE",
+      "properties" : [ {
+        "name" : "ordNumber",
+        "fieldName" : "ordNumber",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Integer",
+          "list" : false
+        }
+      }, {
+        "name" : "shipDate",
+        "fieldName" : "shipDate",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.sql.Date",
+          "list" : false
+        }
+      } ]
+    }
+  },
+  "Procedure_IN_IsList" : {
+    "name" : "Procedure_IN_IsList",
+    "description" : "IN - STRING\nCheck IsList",
+    "version" : "V1",
+    "procedureString" : "call getCustomerList(:custNumber)",
+    "parameters" : [ {
+      "name" : "custNumber",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "103,112",
+      "required" : false,
+      "parameterType" : "IN"
+    } ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : null
+    },
+    "response" : {
+      "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureInIsListResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "SINGLE",
+      "properties" : [ {
+        "name" : "content",
+        "fieldName" : "content",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "CUSTOM",
+          "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureInIsListResponseContent",
+          "list" : true,
+          "properties" : [ {
+            "name" : "customerNumber",
+            "fieldName" : "customerNumber",
+            "optional" : false,
+            "fieldType" : {
+              "type" : "PRIMITIVE",
+              "typeRef" : "java.lang.Integer",
+              "list" : false
+            }
+          }, {
+            "name" : "customerName",
+            "fieldName" : "customerName",
+            "optional" : false,
+            "fieldType" : {
+              "type" : "PRIMITIVE",
+              "typeRef" : "java.lang.String",
+              "list" : false
+            }
+          }, {
+            "name" : "contactLastName",
+            "fieldName" : "contactLastName",
+            "optional" : false,
+            "fieldType" : {
+              "type" : "PRIMITIVE",
+              "typeRef" : "java.lang.String",
+              "list" : false
+            }
+          }, {
+            "name" : "contactFirstName",
+            "fieldName" : "contactFirstName",
+            "optional" : false,
+            "fieldType" : {
+              "type" : "PRIMITIVE",
+              "typeRef" : "java.lang.String",
+              "list" : false
+            }
+          }, {
+            "name" : "phone",
+            "fieldName" : "phone",
+            "optional" : false,
+            "fieldType" : {
+              "type" : "PRIMITIVE",
+              "typeRef" : "java.lang.String",
+              "list" : false
+            }
+          }, {
+            "name" : "addressLine1",
+            "fieldName" : "addressLine1",
+            "optional" : false,
+            "fieldType" : {
+              "type" : "PRIMITIVE",
+              "typeRef" : "java.lang.String",
+              "list" : false
+            }
+          }, {
+            "name" : "addressLine2",
+            "fieldName" : "addressLine2",
+            "optional" : false,
+            "fieldType" : {
+              "type" : "PRIMITIVE",
+              "typeRef" : "java.lang.String",
+              "list" : false
+            }
+          }, {
+            "name" : "city",
+            "fieldName" : "city",
+            "optional" : false,
+            "fieldType" : {
+              "type" : "PRIMITIVE",
+              "typeRef" : "java.lang.String",
+              "list" : false
+            }
+          }, {
+            "name" : "state",
+            "fieldName" : "state",
+            "optional" : false,
+            "fieldType" : {
+              "type" : "PRIMITIVE",
+              "typeRef" : "java.lang.String",
+              "list" : false
+            }
+          }, {
+            "name" : "postalCode",
+            "fieldName" : "postalCode",
+            "optional" : false,
+            "fieldType" : {
+              "type" : "PRIMITIVE",
+              "typeRef" : "java.lang.String",
+              "list" : false
+            }
+          }, {
+            "name" : "country",
+            "fieldName" : "country",
+            "optional" : false,
+            "fieldType" : {
+              "type" : "PRIMITIVE",
+              "typeRef" : "java.lang.String",
+              "list" : false
+            }
+          }, {
+            "name" : "salesRepEmployeeNumber",
+            "fieldName" : "salesRepEmployeeNumber",
+            "optional" : false,
+            "fieldType" : {
+              "type" : "PRIMITIVE",
+              "typeRef" : "java.lang.Integer",
+              "list" : false
+            }
+          }, {
+            "name" : "creditLimit",
+            "fieldName" : "creditLimit",
+            "optional" : false,
+            "fieldType" : {
+              "type" : "PRIMITIVE",
+              "typeRef" : "java.lang.Double",
+              "list" : false
+            }
+          } ]
+        }
+      } ]
+    }
+  },
+  "Procedure_IN_OUT" : {
+    "name" : "Procedure_IN_OUT",
+    "description" : "IN - INT\nOUT - STRING",
+    "version" : "V1",
+    "procedureString" : "call GetCustomerShippingCase(:CustomerNumber,:p_shipping)",
+    "parameters" : [ {
+      "name" : "CustomerNumber",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "112",
+      "required" : false,
+      "parameterType" : "IN"
+    }, {
+      "name" : "p_shipping",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    } ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : null
+    },
+    "response" : {
+      "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureInOutResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "SINGLE",
+      "properties" : [ {
+        "name" : "p_shipping",
+        "fieldName" : "pshipping",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      } ]
+    }
+  },
+  "PROCEDURE_IN_OUT_IN" : {
+    "name" : "PROCEDURE_IN_OUT_IN",
+    "description" : "IN - INT\nOUT - DOUBLE \nIN - INT",
+    "version" : "V1",
+    "procedureString" : "call classicmodels.Divide2(:Numerator,:Result,:Denominator)",
+    "parameters" : [ {
+      "name" : "Numerator",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "15",
+      "required" : false,
+      "parameterType" : "IN"
+    }, {
+      "name" : "Result",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "Denominator",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "3",
+      "required" : false,
+      "parameterType" : "IN"
+    } ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : null
+    },
+    "response" : {
+      "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureInOutInResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "SINGLE",
+      "properties" : [ {
+        "name" : "Result",
+        "fieldName" : "result",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Integer",
+          "list" : false
+        }
+      } ]
+    }
+  },
+  "Procedure_IN_OUT_INOUT" : {
+    "name" : "Procedure_IN_OUT_INOUT",
+    "description" : "IN - INT\nOUT - FLOAT\nINOUT - INT",
+    "version" : "V1",
+    "procedureString" : "call Divide_In_Out_InOut(:numerator,:result1,:denominator)",
+    "parameters" : [ {
+      "name" : "numerator",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "21",
+      "required" : false,
+      "parameterType" : "IN"
+    }, {
+      "name" : "result1",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "denominator",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "3",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    } ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : null
+    },
+    "response" : {
+      "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureInOutInoutResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "SINGLE",
+      "properties" : [ {
+        "name" : "result1",
+        "fieldName" : "result1",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Integer",
+          "list" : false
+        }
+      }, {
+        "name" : "denominator",
+        "fieldName" : "denominator",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Integer",
+          "list" : false
+        }
+      } ]
+    }
+  },
+  "Procedure_IN_OUT_OUT" : {
+    "name" : "Procedure_IN_OUT_OUT",
+    "description" : "IN - INT\nOUT - INT\n OUT - INT\nOUT - INT\n OUT - INT\nOUT - INT\n OUT - INT",
+    "version" : "V1",
+    "procedureString" : "call get_order_by_cust(:cutomerNumber,:Ship, :Cancel, :Resolve, :Dispute, :InProcess, :OnHold)",
+    "parameters" : [ {
+      "name" : "cutomerNumber",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "103",
+      "required" : false,
+      "parameterType" : "IN"
+    }, {
+      "name" : "Ship",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "Cancel",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "Resolve",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "Dispute",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "InProcess",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "OnHold",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    } ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : null
+    },
+    "response" : {
+      "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureInOutOutResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "SINGLE",
+      "properties" : [ {
+        "name" : "Ship",
+        "fieldName" : "ship",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Integer",
+          "list" : false
+        }
+      }, {
+        "name" : "Cancel",
+        "fieldName" : "cancel",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Integer",
+          "list" : false
+        }
+      }, {
+        "name" : "Resolve",
+        "fieldName" : "resolve",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Integer",
+          "list" : false
+        }
+      }, {
+        "name" : "Dispute",
+        "fieldName" : "dispute",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Integer",
+          "list" : false
+        }
+      }, {
+        "name" : "InProcess",
+        "fieldName" : "inProcess",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Integer",
+          "list" : false
+        }
+      }, {
+        "name" : "OnHold",
+        "fieldName" : "onHold",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Integer",
+          "list" : false
+        }
+      } ]
+    }
+  },
+  "Procedure_IN_STRING" : {
+    "name" : "Procedure_IN_STRING",
+    "description" : "IN - STRING",
+    "version" : "V1",
+    "procedureString" : "call classicmodels.GetOfficeByCountry(:countryname)",
+    "parameters" : [ {
+      "name" : "countryname",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "USA",
+      "required" : false,
+      "parameterType" : "IN"
+    } ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : null
+    },
+    "response" : {
+      "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureInStringResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "SINGLE",
+      "properties" : [ {
+        "name" : "content",
+        "fieldName" : "content",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "CUSTOM",
+          "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureInStringResponseContent",
+          "list" : true,
+          "properties" : [ {
+            "name" : "officeCode",
+            "fieldName" : "officeCode",
+            "optional" : false,
+            "fieldType" : {
+              "type" : "PRIMITIVE",
+              "typeRef" : "java.lang.String",
+              "list" : false
+            }
+          }, {
+            "name" : "city",
+            "fieldName" : "city",
+            "optional" : false,
+            "fieldType" : {
+              "type" : "PRIMITIVE",
+              "typeRef" : "java.lang.String",
+              "list" : false
+            }
+          }, {
+            "name" : "phone",
+            "fieldName" : "phone",
+            "optional" : false,
+            "fieldType" : {
+              "type" : "PRIMITIVE",
+              "typeRef" : "java.lang.String",
+              "list" : false
+            }
+          }, {
+            "name" : "addressLine1",
+            "fieldName" : "addressLine1",
+            "optional" : false,
+            "fieldType" : {
+              "type" : "PRIMITIVE",
+              "typeRef" : "java.lang.String",
+              "list" : false
+            }
+          }, {
+            "name" : "addressLine2",
+            "fieldName" : "addressLine2",
+            "optional" : false,
+            "fieldType" : {
+              "type" : "PRIMITIVE",
+              "typeRef" : "java.lang.String",
+              "list" : false
+            }
+          }, {
+            "name" : "state",
+            "fieldName" : "state",
+            "optional" : false,
+            "fieldType" : {
+              "type" : "PRIMITIVE",
+              "typeRef" : "java.lang.String",
+              "list" : false
+            }
+          }, {
+            "name" : "country",
+            "fieldName" : "country",
+            "optional" : false,
+            "fieldType" : {
+              "type" : "PRIMITIVE",
+              "typeRef" : "java.lang.String",
+              "list" : false
+            }
+          }, {
+            "name" : "postalCode",
+            "fieldName" : "postalCode",
+            "optional" : false,
+            "fieldType" : {
+              "type" : "PRIMITIVE",
+              "typeRef" : "java.lang.String",
+              "list" : false
+            }
+          }, {
+            "name" : "territory",
+            "fieldName" : "territory",
+            "optional" : false,
+            "fieldType" : {
+              "type" : "PRIMITIVE",
+              "typeRef" : "java.lang.String",
+              "list" : false
+            }
+          } ]
+        }
+      } ]
+    }
+  },
+  "Procedure_INOUT" : {
+    "name" : "Procedure_INOUT",
+    "description" : "INOUT - INT",
+    "version" : "V1",
+    "procedureString" : "call getEmpNumber(:empNumber)",
+    "parameters" : [ {
+      "name" : "empNumber",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "1002",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    } ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : null
+    },
+    "response" : {
+      "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureInoutResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "SINGLE",
+      "properties" : [ {
+        "name" : "empNumber",
+        "fieldName" : "empNumber",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Integer",
+          "list" : false
+        }
+      } ]
+    }
+  },
+  "Procedure_INOUT_IN" : {
+    "name" : "Procedure_INOUT_IN",
+    "description" : "INOUT - DATE\nIN - INT",
+    "version" : "V1",
+    "procedureString" : "call classicmodels.getShippedDate2(:GiveRequiredDateGetShippedDate, :orderNumber)",
+    "parameters" : [ {
+      "name" : "GiveRequiredDateGetShippedDate",
+      "type" : "date",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "2003-01-13",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    }, {
+      "name" : "orderNumber",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "10100",
+      "required" : false,
+      "parameterType" : "IN"
+    } ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : null
+    },
+    "response" : {
+      "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureInoutInResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "SINGLE",
+      "properties" : [ {
+        "name" : "GiveRequiredDateGetShippedDate",
+        "fieldName" : "giveRequiredDateGetShippedDate",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.sql.Date",
+          "list" : false
+        }
+      } ]
+    }
+  },
+  "Procedure_INOUT_IN_IN" : {
+    "name" : "Procedure_INOUT_IN_IN",
+    "description" : "INOUT - INT\nIN - INT\nIN - INT",
+    "version" : "V1",
+    "procedureString" : "CALL Divide_InOut_In_In(:result1,:numerator,:denominator)",
+    "parameters" : [ {
+      "name" : "result1",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "8",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    }, {
+      "name" : "numerator",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "12",
+      "required" : false,
+      "parameterType" : "IN"
+    }, {
+      "name" : "denominator",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "2",
+      "required" : false,
+      "parameterType" : "IN"
+    } ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : null
+    },
+    "response" : {
+      "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureInoutInInResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "SINGLE",
+      "properties" : [ {
+        "name" : "result1",
+        "fieldName" : "result1",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Integer",
+          "list" : false
+        }
+      } ]
+    }
+  },
+  "Procedure_INOUT_IN_INOUT" : {
+    "name" : "Procedure_INOUT_IN_INOUT",
+    "description" : "INOUT - DOUBLE\nIN - INT\nINOUT - INT",
+    "version" : "V1",
+    "procedureString" : "call Divide_InOut_In_Inout(:result1,:numerator,:denominator)",
+    "parameters" : [ {
+      "name" : "result1",
+      "type" : "double",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "7.5",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    }, {
+      "name" : "numerator",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "7",
+      "required" : false,
+      "parameterType" : "IN"
+    }, {
+      "name" : "denominator",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "2",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    } ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : null
+    },
+    "response" : {
+      "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureInoutInInoutResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "SINGLE",
+      "properties" : [ {
+        "name" : "result1",
+        "fieldName" : "result1",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Double",
+          "list" : false
+        }
+      }, {
+        "name" : "denominator",
+        "fieldName" : "denominator",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Integer",
+          "list" : false
+        }
+      } ]
+    }
+  },
+  "Procedure_INOUT_IN_OUT" : {
+    "name" : "Procedure_INOUT_IN_OUT",
+    "description" : "INOUT - INT\nIN - INT\nOUT - DOUBLE",
+    "version" : "V1",
+    "procedureString" : "CALL Divide_InOut_In_Out(:numerator,:denominator,:result1)",
+    "parameters" : [ {
+      "name" : "numerator",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "22",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    }, {
+      "name" : "denominator",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "11",
+      "required" : false,
+      "parameterType" : "IN"
+    }, {
+      "name" : "result1",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    } ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : null
+    },
+    "response" : {
+      "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureInoutInOutResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "SINGLE",
+      "properties" : [ {
+        "name" : "numerator",
+        "fieldName" : "numerator",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Integer",
+          "list" : false
+        }
+      }, {
+        "name" : "result1",
+        "fieldName" : "result1",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Integer",
+          "list" : false
+        }
+      } ]
+    }
+  },
+  "Procedure_INOUT_INOUT" : {
+    "name" : "Procedure_INOUT_INOUT",
+    "description" : "INOUT - INT\nINOUT - STRING",
+    "version" : "V1",
+    "procedureString" : "call getCustomerLevel_Inout_Inout(:custnum,:customerLevel)",
+    "parameters" : [ {
+      "name" : "custnum",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "103",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    }, {
+      "name" : "customerLevel",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "xxx",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    } ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : null
+    },
+    "response" : {
+      "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureInoutInoutResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "SINGLE",
+      "properties" : [ {
+        "name" : "custnum",
+        "fieldName" : "custnum",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Integer",
+          "list" : false
+        }
+      }, {
+        "name" : "customerLevel",
+        "fieldName" : "customerLevel",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      } ]
+    }
+  },
+  "Procedure_INOUT_INOUT_IN" : {
+    "name" : "Procedure_INOUT_INOUT_IN",
+    "description" : "INOUT - INT\nINOUT - INT\nINOUT - INT\nIN - INT",
+    "version" : "V1",
+    "procedureString" : "call classicmodels.set_counter2(:count1, :count2, :count3, :inc)",
+    "parameters" : [ {
+      "name" : "count1",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "2",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    }, {
+      "name" : "count2",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "22",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    }, {
+      "name" : "count3",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "15",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    }, {
+      "name" : "inc",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "5",
+      "required" : false,
+      "parameterType" : "IN"
+    } ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : null
+    },
+    "response" : {
+      "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureInoutInoutInResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "SINGLE",
+      "properties" : [ {
+        "name" : "count1",
+        "fieldName" : "count1",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Integer",
+          "list" : false
+        }
+      }, {
+        "name" : "count2",
+        "fieldName" : "count2",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Integer",
+          "list" : false
+        }
+      }, {
+        "name" : "count3",
+        "fieldName" : "count3",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Integer",
+          "list" : false
+        }
+      } ]
+    }
+  },
+  "Procedure_INOUT_INOUT_INOUT" : {
+    "name" : "Procedure_INOUT_INOUT_INOUT",
+    "description" : "INOUT- INT\nINOUT- INT\nINOUT- DOUBLE",
+    "version" : "V1",
+    "procedureString" : "call Divide_InOut_Inout_InOut(:numerator,:denominator,:result1)",
+    "parameters" : [ {
+      "name" : "numerator",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "22",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    }, {
+      "name" : "denominator",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "11",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    }, {
+      "name" : "result1",
+      "type" : "double",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "33",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    } ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : null
+    },
+    "response" : {
+      "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureInoutInoutInoutResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "SINGLE",
+      "properties" : [ {
+        "name" : "numerator",
+        "fieldName" : "numerator",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Integer",
+          "list" : false
+        }
+      }, {
+        "name" : "denominator",
+        "fieldName" : "denominator",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Integer",
+          "list" : false
+        }
+      }, {
+        "name" : "result1",
+        "fieldName" : "result1",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Double",
+          "list" : false
+        }
+      } ]
+    }
+  },
+  "Procedure_INOUT_INOUT_OUT" : {
+    "name" : "Procedure_INOUT_INOUT_OUT",
+    "description" : "INOUT - INT\nINOUT - INT\nOUT - DOUBLE",
+    "version" : "V1",
+    "procedureString" : "call Divide_InOut_Inout_Out(:numerator,:denominator,:result1)",
+    "parameters" : [ {
+      "name" : "numerator",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "22",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    }, {
+      "name" : "denominator",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "11",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    }, {
+      "name" : "result1",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    } ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : null
+    },
+    "response" : {
+      "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureInoutInoutOutResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "SINGLE",
+      "properties" : [ {
+        "name" : "numerator",
+        "fieldName" : "numerator",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Integer",
+          "list" : false
+        }
+      }, {
+        "name" : "denominator",
+        "fieldName" : "denominator",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Integer",
+          "list" : false
+        }
+      }, {
+        "name" : "result1",
+        "fieldName" : "result1",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Integer",
+          "list" : false
+        }
+      } ]
+    }
+  },
+  "Procedure_INOUT_OUT" : {
+    "name" : "Procedure_INOUT_OUT",
+    "description" : "INOUT - INT\nOUT - STRING",
+    "version" : "V1",
+    "procedureString" : "call getCustomerLevel_Inout_out(:custnum,:customerLevel)",
+    "parameters" : [ {
+      "name" : "custnum",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "103",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    }, {
+      "name" : "customerLevel",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    } ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : null
+    },
+    "response" : {
+      "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureInoutOutResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "SINGLE",
+      "properties" : [ {
+        "name" : "custnum",
+        "fieldName" : "custnum",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Integer",
+          "list" : false
+        }
+      }, {
+        "name" : "customerLevel",
+        "fieldName" : "customerLevel",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      } ]
+    }
+  },
+  "Procedure_INOUT_OUT_IN" : {
+    "name" : "Procedure_INOUT_OUT_IN",
+    "description" : "INOUT - INT\nOUT - DOUBLE \nIN - INT",
+    "version" : "V1",
+    "procedureString" : "call Divide_InOut_out_In(:numerator,:result1,:denominator)",
+    "parameters" : [ {
+      "name" : "numerator",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "22",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    }, {
+      "name" : "result1",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "denominator",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "11",
+      "required" : false,
+      "parameterType" : "IN"
+    } ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : null
+    },
+    "response" : {
+      "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureInoutOutInResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "SINGLE",
+      "properties" : [ {
+        "name" : "numerator",
+        "fieldName" : "numerator",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Integer",
+          "list" : false
+        }
+      }, {
+        "name" : "result1",
+        "fieldName" : "result1",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Integer",
+          "list" : false
+        }
+      } ]
+    }
+  },
+  "Procedure_INOUT_OUT_INOUT" : {
+    "name" : "Procedure_INOUT_OUT_INOUT",
+    "description" : "INOUT- INT\nOUT - DOUBLE\nINOUT - INT",
+    "version" : "V1",
+    "procedureString" : "call Divide_InOut_out_Inout(:numerator,:result1,:denominator)",
+    "parameters" : [ {
+      "name" : "numerator",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "22",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    }, {
+      "name" : "result1",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "denominator",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "11",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    } ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : null
+    },
+    "response" : {
+      "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureInoutOutInoutResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "SINGLE",
+      "properties" : [ {
+        "name" : "numerator",
+        "fieldName" : "numerator",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Integer",
+          "list" : false
+        }
+      }, {
+        "name" : "result1",
+        "fieldName" : "result1",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Integer",
+          "list" : false
+        }
+      }, {
+        "name" : "denominator",
+        "fieldName" : "denominator",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Integer",
+          "list" : false
+        }
+      } ]
+    }
+  },
+  "Procedure_INOUT_OUT_OUT" : {
+    "name" : "Procedure_INOUT_OUT_OUT",
+    "description" : "INOUT-- Date\nOUT -- Date\nOUT -- String",
+    "version" : "V1",
+    "procedureString" : "call getReqDateStatus(:ordrDate,:reqDate,:ordrstatus)",
+    "parameters" : [ {
+      "name" : "ordrDate",
+      "type" : "date",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "2003-01-06",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    }, {
+      "name" : "reqDate",
+      "type" : "date",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "ordrstatus",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    } ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : null
+    },
+    "response" : {
+      "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureInoutOutOutResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "SINGLE",
+      "properties" : [ {
+        "name" : "ordrDate",
+        "fieldName" : "ordrDate",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.sql.Date",
+          "list" : false
+        }
+      }, {
+        "name" : "reqDate",
+        "fieldName" : "reqDate",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.sql.Date",
+          "list" : false
+        }
+      }, {
+        "name" : "ordrstatus",
+        "fieldName" : "ordrstatus",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      } ]
+    }
+  },
+  "Procedure_OUT" : {
+    "name" : "Procedure_OUT",
+    "description" : "OUT - STRING",
+    "version" : "V1",
+    "procedureString" : "call getEmployeeEmailByID1002(:empEmail)",
+    "parameters" : [ {
+      "name" : "empEmail",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    } ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : null
+    },
+    "response" : {
+      "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureOutResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "SINGLE",
+      "properties" : [ {
+        "name" : "empEmail",
+        "fieldName" : "empEmail",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      } ]
+    }
+  },
+  "Procedure_OUT_IN" : {
+    "name" : "Procedure_OUT_IN",
+    "description" : "OUT - STRING\nIN - INT",
+    "version" : "V1",
+    "procedureString" : "call getEmpFName(:empFName,:empNumber)",
+    "parameters" : [ {
+      "name" : "empFName",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "empNumber",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "1002",
+      "required" : false,
+      "parameterType" : "IN"
+    } ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : null
+    },
+    "response" : {
+      "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureOutInResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "SINGLE",
+      "properties" : [ {
+        "name" : "empFName",
+        "fieldName" : "empFname",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      } ]
+    }
+  },
+  "Procedure_OUT_IN_IN" : {
+    "name" : "Procedure_OUT_IN_IN",
+    "description" : "OUT - INT\nIN - DATE\nIN - STRING",
+    "version" : "V1",
+    "procedureString" : "call getPayment(:payDate,:custNumber,:checkNum)",
+    "parameters" : [ {
+      "name" : "payDate",
+      "type" : "date",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "custNumber",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "103",
+      "required" : false,
+      "parameterType" : "IN"
+    }, {
+      "name" : "checkNum",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "HQ336336",
+      "required" : false,
+      "parameterType" : "IN"
+    } ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : null
+    },
+    "response" : {
+      "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureOutInInResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "SINGLE",
+      "properties" : [ {
+        "name" : "payDate",
+        "fieldName" : "payDate",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.sql.Date",
+          "list" : false
+        }
+      } ]
+    }
+  },
+  "Procedure_OUT_IN_INOUT" : {
+    "name" : "Procedure_OUT_IN_INOUT",
+    "description" : "OUT - DATE\nIN - DATE\nINOUT - INT",
+    "version" : "V1",
+    "procedureString" : "CALL getShippedDate_Out_In_Inout(:shipDate,:reqDate,:ordNumber)",
+    "parameters" : [ {
+      "name" : "shipDate",
+      "type" : "date",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "reqDate",
+      "type" : "date",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "2003-01-13",
+      "required" : false,
+      "parameterType" : "IN"
+    }, {
+      "name" : "ordNumber",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "10100",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    } ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : null
+    },
+    "response" : {
+      "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureOutInInoutResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "SINGLE",
+      "properties" : [ {
+        "name" : "shipDate",
+        "fieldName" : "shipDate",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.sql.Date",
+          "list" : false
+        }
+      }, {
+        "name" : "ordNumber",
+        "fieldName" : "ordNumber",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Integer",
+          "list" : false
+        }
+      } ]
+    }
+  },
+  "Procedure_OUT_IN_OUT" : {
+    "name" : "Procedure_OUT_IN_OUT",
+    "description" : "OUT - STRING\nIN - STRING\nOUT - STRING",
+    "version" : "V1",
+    "procedureString" : "call getProductLine(:txtDesc,:prodLine,:htmlDesc)",
+    "parameters" : [ {
+      "name" : "txtDesc",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "prodLine",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "Classic Cars",
+      "required" : false,
+      "parameterType" : "IN"
+    }, {
+      "name" : "htmlDesc",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    } ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : null
+    },
+    "response" : {
+      "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureOutInOutResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "SINGLE",
+      "properties" : [ {
+        "name" : "txtDesc",
+        "fieldName" : "txtDesc",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      }, {
+        "name" : "htmlDesc",
+        "fieldName" : "htmlDesc",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      } ]
+    }
+  },
+  "Procedure_OUT_INOUT" : {
+    "name" : "Procedure_OUT_INOUT",
+    "description" : "OUT - STRING\nINOUT - STRING",
+    "version" : "V1",
+    "procedureString" : "call getProductLineItems(:txtDesc,:prodLine)",
+    "parameters" : [ {
+      "name" : "txtDesc",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "prodLine",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "Classic Cars",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    } ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : null
+    },
+    "response" : {
+      "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureOutInoutResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "SINGLE",
+      "properties" : [ {
+        "name" : "txtDesc",
+        "fieldName" : "txtDesc",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      }, {
+        "name" : "prodLine",
+        "fieldName" : "prodLine",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      } ]
+    }
+  },
+  "Procedure_OUT_INOUT_IN" : {
+    "name" : "Procedure_OUT_INOUT_IN",
+    "description" : "OUT - DATE\nINOUT- DATE\nIN - INT",
+    "version" : "V1",
+    "procedureString" : "call getShippedDate_Out_Inout_In(:shipDate,:reqDate,:ordNumber)",
+    "parameters" : [ {
+      "name" : "shipDate",
+      "type" : "date",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "reqDate",
+      "type" : "date",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "2003-01-13",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    }, {
+      "name" : "ordNumber",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "10100",
+      "required" : false,
+      "parameterType" : "IN"
+    } ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : null
+    },
+    "response" : {
+      "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureOutInoutInResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "SINGLE",
+      "properties" : [ {
+        "name" : "shipDate",
+        "fieldName" : "shipDate",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.sql.Date",
+          "list" : false
+        }
+      }, {
+        "name" : "reqDate",
+        "fieldName" : "reqDate",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.sql.Date",
+          "list" : false
+        }
+      } ]
+    }
+  },
+  "Procedure_OUT_INOUT_INOUT" : {
+    "name" : "Procedure_OUT_INOUT_INOUT",
+    "description" : "OUT - DATE\nINOUT - DATE\nINOUT - INT",
+    "version" : "V1",
+    "procedureString" : "CALL getShippedDate_Out_Inout_Inout(:shipDate,:reqDate,:ordNumber)",
+    "parameters" : [ {
+      "name" : "shipDate",
+      "type" : "date",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "reqDate",
+      "type" : "date",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "2003-01-13",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    }, {
+      "name" : "ordNumber",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "10100",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    } ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : null
+    },
+    "response" : {
+      "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureOutInoutInoutResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "SINGLE",
+      "properties" : [ {
+        "name" : "shipDate",
+        "fieldName" : "shipDate",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.sql.Date",
+          "list" : false
+        }
+      }, {
+        "name" : "reqDate",
+        "fieldName" : "reqDate",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.sql.Date",
+          "list" : false
+        }
+      }, {
+        "name" : "ordNumber",
+        "fieldName" : "ordNumber",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Integer",
+          "list" : false
+        }
+      } ]
+    }
+  },
+  "Procedure_OUT_INOUT_OUT" : {
+    "name" : "Procedure_OUT_INOUT_OUT",
+    "description" : "OUT - STRING\nINOUT - STRING\nOUT - STRING",
+    "version" : "V1",
+    "procedureString" : "call getProducts(:prodName,:prodCode,:prodDesc)",
+    "parameters" : [ {
+      "name" : "prodName",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "prodCode",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "S10_1678",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    }, {
+      "name" : "prodDesc",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    } ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : null
+    },
+    "response" : {
+      "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureOutInoutOutResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "SINGLE",
+      "properties" : [ {
+        "name" : "prodName",
+        "fieldName" : "prodName",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      }, {
+        "name" : "prodCode",
+        "fieldName" : "prodCode",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      }, {
+        "name" : "prodDesc",
+        "fieldName" : "prodDesc",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      } ]
+    }
+  },
+  "Procedure_OUT_OUT" : {
+    "name" : "Procedure_OUT_OUT",
+    "description" : "OUT - STRING\nOUT - STRING",
+    "version" : "V1",
+    "procedureString" : "call getEmployee12(:empFName,:empLName)",
+    "parameters" : [ {
+      "name" : "empFName",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "empLName",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    } ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : null
+    },
+    "response" : {
+      "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureOutOutResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "SINGLE",
+      "properties" : [ {
+        "name" : "empFName",
+        "fieldName" : "empFname",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      }, {
+        "name" : "empLName",
+        "fieldName" : "empLname",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      } ]
+    }
+  },
+  "Procedure_OUT_OUT_IN" : {
+    "name" : "Procedure_OUT_OUT_IN",
+    "description" : "OUT - STRING\nOUT - STRING\nIN - INT",
+    "version" : "V1",
+    "procedureString" : "call getOfficeAddress(:addrLine1,:addrLine2,:offCode)",
+    "parameters" : [ {
+      "name" : "addrLine1",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "addrLine2",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "offCode",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "1",
+      "required" : false,
+      "parameterType" : "IN"
+    } ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : null
+    },
+    "response" : {
+      "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureOutOutInResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "SINGLE",
+      "properties" : [ {
+        "name" : "addrLine1",
+        "fieldName" : "addrLine1",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      }, {
+        "name" : "addrLine2",
+        "fieldName" : "addrLine2",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      } ]
+    }
+  },
+  "Procedure_OUT_OUT_INOUT" : {
+    "name" : "Procedure_OUT_OUT_INOUT",
+    "description" : "OUT - STRING\nOUT - STRING \nINOUT - INT",
+    "version" : "V1",
+    "procedureString" : "call getEmployeeByID(:empFirstName,:empExtension,:empNumber)",
+    "parameters" : [ {
+      "name" : "empFirstName",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "empExtension",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "empNumber",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "1002",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    } ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : null
+    },
+    "response" : {
+      "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureOutOutInoutResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "SINGLE",
+      "properties" : [ {
+        "name" : "empFirstName",
+        "fieldName" : "empFirstName",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      }, {
+        "name" : "empExtension",
+        "fieldName" : "empExtension",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      }, {
+        "name" : "empNumber",
+        "fieldName" : "empNumber",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Integer",
+          "list" : false
+        }
+      } ]
+    }
+  },
+  "Procedure_OUT_OUT_OUT" : {
+    "name" : "Procedure_OUT_OUT_OUT",
+    "description" : "OUT - INT\nOUT - INT\nOUT - INT\nOUT - INT\nOUT - INT\nOUT - INT",
+    "version" : "V1",
+    "procedureString" : "call get_order_count(:Ship, :Cancel, :Resolve, :Dispute, :InProcess, :OnHold)",
+    "parameters" : [ {
+      "name" : "Ship",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "Cancel",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "Resolve",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "Dispute",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "InProcess",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "OnHold",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    } ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : null
+    },
+    "response" : {
+      "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureOutOutOutResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "SINGLE",
+      "properties" : [ {
+        "name" : "Ship",
+        "fieldName" : "ship",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Integer",
+          "list" : false
+        }
+      }, {
+        "name" : "Cancel",
+        "fieldName" : "cancel",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Integer",
+          "list" : false
+        }
+      }, {
+        "name" : "Resolve",
+        "fieldName" : "resolve",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Integer",
+          "list" : false
+        }
+      }, {
+        "name" : "Dispute",
+        "fieldName" : "dispute",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Integer",
+          "list" : false
+        }
+      }, {
+        "name" : "InProcess",
+        "fieldName" : "inProcess",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Integer",
+          "list" : false
+        }
+      }, {
+        "name" : "OnHold",
+        "fieldName" : "onHold",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Integer",
+          "list" : false
+        }
+      } ]
+    }
+  },
+  "Procedure_Sysparam" : {
+    "name" : "Procedure_Sysparam",
+    "description" : "Procedure_Sysparam",
+    "version" : "V1",
+    "procedureString" : "call GetCustomerShippingCase(:CustomerNumber,:p_shipping)",
+    "parameters" : [ {
+      "name" : "CustomerNumber",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "SERVER",
+      "variableName" : "USER_ID",
+      "testValue" : "103",
+      "required" : false,
+      "parameterType" : "IN"
+    }, {
+      "name" : "p_shipping",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    } ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : null
+    },
+    "response" : {
+      "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureSysparamResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "SINGLE",
+      "properties" : [ {
+        "name" : "p_shipping",
+        "fieldName" : "pshipping",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      } ]
+    }
+  },
+  "Procedure_WithoutAnyParams" : {
+    "name" : "Procedure_WithoutAnyParams",
+    "description" : "Without Any Params",
+    "version" : "V1",
+    "procedureString" : "call test_mysql_loop()",
+    "parameters" : [ ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : null
+    },
+    "response" : {
+      "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureWithoutAnyParamsResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "SINGLE",
+      "properties" : [ {
+        "name" : "content",
+        "fieldName" : "content",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "CUSTOM",
+          "typeRef" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureWithoutAnyParamsResponseContent",
+          "list" : true,
+          "properties" : [ {
+            "name" : "str",
+            "fieldName" : "str",
+            "optional" : false,
+            "fieldType" : {
+              "type" : "PRIMITIVE",
+              "typeRef" : "java.lang.String",
+              "list" : false
+            }
+          } ]
+        }
+      } ]
+    }
+  }
+}

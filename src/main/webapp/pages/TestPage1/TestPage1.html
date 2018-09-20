@@ -1,0 +1,38 @@
+<wm-page data-ng-controller="TestPage1PageController" pagetitle="Test Page 1" name="page1"> 
+    <wm-header content="header" name="header1"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-page-content columnwidth="12" name="page_content1"> 
+            <wm-list listclass="list-group" template="true" itemsperrow="xs-1 sm-2 md-3 lg-4" class="list-card" dataset="bind:Variables.ClassicmodelsExecuteProcedure_getProductDetails.dataSet" navigation="Basic" name="livelist1"> 
+                <wm-listtemplate layout="media" name="listtemplate1"> 
+                    <wm-card name="card1"> 
+                        <wm-card-content fontsize="0.8" fontunit="em" name="card_content1"> 
+                            <wm-layoutgrid columns="2" name="layoutgrid1"> 
+                                <wm-gridrow name="gridrow1"> 
+                                    <wm-gridcolumn colwidth="6" columnwidth="6" class="col-xs-6" name="gridcolumn1"> 
+                                        <wm-picture name="Picture" width="100%"></wm-picture> 
+                                    </wm-gridcolumn> 
+                                    <wm-gridcolumn colwidth="6" columnwidth="6" padding="unset 1.25em" class="col-xs-6" name="gridcolumn2"> 
+                                        <wm-label name="ID" caption="bind:Variables.ClassicmodelsExecuteProcedure_getProductDetails.dataSet.ProductDesc" fontunit="em" class="text-muted p" margin="unset unset 0px unset" whitespace="nowrap"></wm-label> 
+                                        <wm-label name="Name" caption="bind:Variables.ClassicmodelsExecuteProcedure_getProductDetails.dataSet.quantityInStock" fontunit="em" color="#000" class="h4" margin="0px unset" whitespace="nowrap"></wm-label> 
+                                        <wm-label name="JobTitle" caption="bind:Variables.ClassicmodelsExecuteProcedure_getProductDetails.dataSet.buyPrice" class="h5" margin="0px unset unset unset" whitespace="nowrap"></wm-label> 
+                                        <wm-label name="Department" caption="Department" class="p text-muted" margin="unset unset 0px unset" whitespace="nowrap"></wm-label> 
+                                        <wm-label name="Location" caption="Location" class="text-muted p" whitespace="nowrap"></wm-label> 
+                                        <wm-anchor name="PhoneNumber" caption="" class="h5" hyperlink="tel:" margin="0px unset" whitespace="nowrap"></wm-anchor> 
+                                        <wm-anchor name="EmailID" class="p text-muted" hyperlink="mailto://" caption="" whitespace="nowrap"></wm-anchor> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                            </wm-layoutgrid> 
+                        </wm-card-content> 
+                    </wm-card> 
+                </wm-listtemplate> 
+            </wm-list> 
+            <wm-table title="" dataset="bind:Variables.ClassicmodelsExecuteProcedure_getProductDetails.dataSet" navigation="Basic" name="grid1"> 
+                <wm-table-column binding="quantityInStock" caption="Quantity In Stock" pcdisplay="true" mobiledisplay="true" readonly="true"></wm-table-column> 
+                <wm-table-column binding="ProductDesc" caption="Product Desc" pcdisplay="true" mobiledisplay="true" readonly="true"></wm-table-column> 
+                <wm-table-column binding="buyPrice" caption="Buy Price" pcdisplay="true" mobiledisplay="true" readonly="true"></wm-table-column> 
+            </wm-table> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>

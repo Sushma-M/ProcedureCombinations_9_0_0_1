@@ -1,0 +1,131 @@
+{
+  "Procedure_OUT_OUT_IN" : {
+    "name" : "Procedure_OUT_OUT_IN",
+    "description" : "Procedure with out, out, in",
+    "version" : "V1",
+    "procedureString" : "call getOfficeAddress(:addrLine1,:addrLine2,:offCode)",
+    "parameters" : [ {
+      "name" : "addrLine1",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "addrLine2",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "offCode",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "2",
+      "required" : false,
+      "parameterType" : "IN"
+    } ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : null
+    },
+    "response" : {
+      "typeRef" : "com.testingprocedurecombinations.classicmodelsdb.models.procedure.ProcedureOutOutInResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "SINGLE",
+      "properties" : [ {
+        "name" : "addrLine1",
+        "fieldName" : "addrLine1",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      }, {
+        "name" : "addrLine2",
+        "fieldName" : "addrLine2",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      } ]
+    }
+  },
+  "Procedure_OUT_OUT_INOUT" : {
+    "name" : "Procedure_OUT_OUT_INOUT",
+    "description" : "Procedure with out, out and inout",
+    "version" : "V1",
+    "procedureString" : "call getEmployeeDetails(:empEmail,:empJobTitle,:empNumber)",
+    "parameters" : [ {
+      "name" : "empEmail",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "empJobTitle",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "empNumber",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "testValue" : "1002",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    } ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : null
+    },
+    "response" : {
+      "typeRef" : "com.testingprocedurecombinations.classicmodelsdb.models.procedure.ProcedureOutOutInoutResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "SINGLE",
+      "properties" : [ {
+        "name" : "empEmail",
+        "fieldName" : "empEmail",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      }, {
+        "name" : "empJobTitle",
+        "fieldName" : "empJobTitle",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      }, {
+        "name" : "empNumber",
+        "fieldName" : "empNumber",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Integer",
+          "list" : false
+        }
+      } ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "ProductsController" : { },
+  "PaymentsController" : { },
+  "ArticleTagsController" : { },
+  "Mytable2Controller" : { },
+  "ProductlinesController" : { },
+  "OrdersController" : { },
+  "OfficesController" : { },
+  "EmployeesController" : { },
+  "MytableController" : { },
+  "QueryExecutionController" : { },
+  "CustomersController" : { },
+  "OrderdetailsController" : { },
+  "ProcedureExecutionController" : {
+    "executeProcedure_getProductDetails" : "UNAVAILABLE",
+    "executeProcedure_IN" : "UNAVAILABLE",
+    "executePROCEDURE_IN_OUT_IN" : "UNAVAILABLE",
+    "executeProcedure_INOUT" : "UNAVAILABLE",
+    "executeProcedure_INOUT_IN" : "UNAVAILABLE",
+    "executeProcedure_INOUT_INOUT" : "UNAVAILABLE",
+    "executeProcedure_OUT_OUT_OUT" : "UNAVAILABLE"
+  }
+}

@@ -1,0 +1,83 @@
+<wm-partial data-ng-controller="Partial_INOUTCombinationOf2PageController" name="partial1"> 
+    <wm-tabs name="tabs4"> 
+        <wm-tabpane name="tabpane10" title="INOUT IN Combination"> 
+            <wm-layoutgrid name="layoutgrid2"> 
+                <wm-gridrow name="gridrow3"> 
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn5"> 
+                        <wm-composite name="composite2"> 
+                            <wm-label class="col-md-3 control-label" name="label3" caption="Select Order Number"></wm-label> 
+                            <wm-container class="col-md-9" name="container2"> 
+                                <wm-select name="select_Order" dataset="bind:Variables.LV_Orders.dataSet" datafield="orderNumber" displayexpression="bind:$[data[$i].orderNumber]+' -- '+$[data[$i].requiredDate]"></wm-select> 
+                            </wm-container> 
+                        </wm-composite> 
+                        <wm-button class="btn-default" caption="Get Shipped Date" type="button" margin="unset 0.5em" name="button_Data" on-click="Variables.Procedure_INOUT_IN.invoke()"></wm-button> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn6"> 
+                        <wm-composite name="composite3"> 
+                            <wm-label class="col-md-3 control-label" name="label5" caption="Select Required Date"></wm-label> 
+                            <wm-container class="col-md-9" name="container3"> 
+                                <wm-date name="date_ShippedDate" placeholder="Enter the Selected Date"></wm-date> 
+                            </wm-container> 
+                        </wm-composite> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow4"> 
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn7"> 
+                        <wm-label padding="unset 0.5em" name="label4" caption="bind:'Get Shipped Date: <b>'+Variables.Procedure_INOUT_IN.dataSet[$i].GiveRequiredDateGetShippedDate+'</b>'" fontsize="1.4" fontunit="em"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn8"></wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+        </wm-tabpane> 
+        <wm-tabpane name="tabpane11" title="INOUT OUT Combination"> 
+            <wm-layoutgrid name="layoutgrid1"> 
+                <wm-gridrow name="gridrow1"> 
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn1"> 
+                        <wm-composite name="composite1"> 
+                            <wm-label class="col-md-3 control-label" name="label1" caption="Select Customer Number"></wm-label> 
+                            <wm-container class="col-md-9" name="container1"> 
+                                <wm-select name="select_Cust" dataset="bind:Variables.LV_CustomerData.dataSet" datafield="customerNumber" displayfield="customerNumber"></wm-select> 
+                            </wm-container> 
+                        </wm-composite> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn2"></wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow2"> 
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn3"> 
+                        <wm-label padding="unset 0.5em" name="label2" caption="bind:&quot;Entered Customer Number is: <b>&quot;+Variables.Procedure_INOUT_OUT.dataSet[$i].custnum+'</b> and Customer Level: <b>'+Variables.Procedure_INOUT_OUT.dataSet[$i].customerLevel+'</b>'" fontsize="1.4" fontunit="em"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn4"></wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+        </wm-tabpane> 
+        <wm-tabpane name="tabpane12" title="INOUT INOUT Combination"> 
+            <wm-layoutgrid name="layoutgrid3"> 
+                <wm-gridrow name="gridrow5"> 
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn9"> 
+                        <wm-composite name="composite4"> 
+                            <wm-label class="col-md-3 control-label" caption="Select Customer Number" name="label6"></wm-label> 
+                            <wm-container class="col-md-9" name="container4"> 
+                                <wm-select dataset="bind:Variables.LV_CustomerData.dataSet" datafield="customerNumber" displayfield="customerNumber" name="select_Cust1"></wm-select> 
+                            </wm-container> 
+                        </wm-composite> 
+                        <wm-button class="btn-default" caption="Get Customer Level" type="button" margin="unset 0.5em" name="button_Data1" on-click="Variables.Procedure_INOUT_INOUT.invoke()"></wm-button> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn10"> 
+                        <wm-composite name="composite6"> 
+                            <wm-label class="col-md-3 control-label" name="label9" caption="Customer Level"></wm-label> 
+                            <wm-container class="col-md-9" name="container6"> 
+                                <wm-text name="text_CustLevel"></wm-text> 
+                            </wm-container> 
+                        </wm-composite> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow6"> 
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn11"> 
+                        <wm-label padding="unset 0.5em" caption="bind:'Given Customer Number is: &quot;<b>'+Variables.Procedure_INOUT_INOUT.dataSet[$i].custnum+'</b>&quot; and Customer Level is: <b>&quot; '+Variables.Procedure_INOUT_INOUT.dataSet[$i].customerLevel+'&quot;</b>'" fontsize="1.4" fontunit="em" name="label8"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn12"></wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+        </wm-tabpane> 
+    </wm-tabs> 
+</wm-partial>

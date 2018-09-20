@@ -1,0 +1,73 @@
+[ {
+  "name" : "Common",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "Login",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "Main",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "Partial_CombinationOf2",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "Partial_CombinationOf3",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "Partial_CombinationOf3_IN",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "Partial_CombinationOf3_INOUT",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "Partial_CombinationOf3_OUT",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "Partial_INCombinationOf2",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "Partial_INOUTCombinationOf2",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "Partial_OUTCombinationOf2",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "Partial_Single_IN_OUT_INOUT",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "TestPage1",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "footer",
+  "type" : "FOOTER",
+  "params" : [ ]
+}, {
+  "name" : "header",
+  "type" : "HEADER",
+  "params" : [ ]
+}, {
+  "name" : "leftnav",
+  "type" : "LEFTNAV",
+  "params" : [ ]
+}, {
+  "name" : "rightnav",
+  "type" : "RIGHTNAV",
+  "params" : [ ]
+}, {
+  "name" : "topnav",
+  "type" : "TOPNAV",
+  "params" : [ ]
+} ]

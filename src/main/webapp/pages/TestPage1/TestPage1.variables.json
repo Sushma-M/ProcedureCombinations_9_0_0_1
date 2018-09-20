@@ -1,0 +1,30 @@
+{
+  "ClassicmodelsExecuteProcedure_getProductDetails" : {
+    "_id" : "wm-ClassicmodelsExecuteProcedure_getProductDetails-wm.ServiceVariable-1484633579158",
+    "name" : "ClassicmodelsExecuteProcedure_getProductDetails",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ {
+      "target" : "prodLine",
+      "value" : "Classic Cars",
+      "type" : "string"
+    } ],
+    "type" : "com.testingprocedurecombinations.classicmodels.models.procedure.ProcedureGetProductDetailsResponseContent",
+    "service" : "classicmodels",
+    "operation" : "executeProcedure_getProductDetails",
+    "operationId" : "ProcedureExecutionController_executeProcedure_getProductDetails",
+    "operationType" : "get",
+    "serviceType" : "DataService",
+    "dataSet" : [ ],
+    "isList" : true,
+    "maxResults" : 20,
+    "designMaxResults" : 10,
+    "startUpdate" : true,
+    "autoUpdate" : true,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "isDefault" : true,
+    "controller" : "ProcedureExecution"
+  }
+}

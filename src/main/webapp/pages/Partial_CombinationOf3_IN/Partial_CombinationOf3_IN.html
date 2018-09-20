@@ -1,0 +1,211 @@
+<wm-partial data-ng-controller="Partial_CombinationOf3_INPageController" name="partial1"> 
+    <wm-tabs name="tabs1"> 
+        <wm-tabpane name="tabpane1" title="IN_IN_IN Combination"> 
+            <wm-layoutgrid name="layoutgrid1" columns="3"> 
+                <wm-gridrow name="gridrow3"> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn5"> 
+                        <wm-composite name="composite1"> 
+                            <wm-label class="col-md-3 control-label" name="label1" caption="Article ID"></wm-label> 
+                            <wm-container class="col-md-9" name="container1"> 
+                                <wm-select name="select_articleID" dataset="bind:Variables.LV_ArticleTags.dataSet" datafield="articleId" displayfield="articleId"></wm-select> 
+                            </wm-container> 
+                        </wm-composite> 
+                        <wm-button class="btn-default" caption="Get Message" type="button" margin="unset 0.5em" name="button_Data1" on-click="Variables.Procedure_IN_IN_IN.invoke()"></wm-button> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn6"> 
+                        <wm-composite name="composite2"> 
+                            <wm-label class="col-md-3 control-label" name="label2" caption="Tag ID"></wm-label> 
+                            <wm-container class="col-md-9" name="container2"> 
+                                <wm-select name="select_tagID" dataset="bind:Variables.LV_ArticleTags.dataSet" datafield="tagId" displayfield="tagId"></wm-select> 
+                            </wm-container> 
+                        </wm-composite> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn7"> 
+                        <wm-composite name="composite3"> 
+                            <wm-label class="col-md-3 control-label" name="label3" caption="Blank"></wm-label> 
+                            <wm-container class="col-md-9" name="container3"> 
+                                <wm-select name="select_blank" dataset="bind:Variables.LV_ArticleTags.dataSet" datafield="blank" displayfield="blank"></wm-select> 
+                            </wm-container> 
+                        </wm-composite> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow4"> 
+                    <wm-gridcolumn columnwidth="12" name="gridcolumn8"> 
+                        <wm-label padding="unset 0.5em" name="label4" caption="bind:Variables.Procedure_IN_IN_IN.dataSet[$i].msg" fontsize="1.4" fontunit="em" color="#ff0000"></wm-label> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+        </wm-tabpane> 
+        <wm-tabpane name="tabpane2" title="IN_IN_OUT Combination"> 
+            <wm-layoutgrid name="layoutgrid2"> 
+                <wm-gridrow name="gridrow3_1"> 
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn5_1"> 
+                        <wm-composite name="composite4"> 
+                            <wm-label class="col-md-3 control-label" name="label5" caption="Required Date"></wm-label> 
+                            <wm-container class="col-md-9" name="container4"> 
+                                <wm-select name="select_reqDate" dataset="bind:Variables.LV_Orders.dataSet" datafield="requiredDate" displayexpression="bind:$[data[$i].requiredDate]+' Order NO.: '+$[data[$i].orderNumber]"></wm-select> 
+                            </wm-container> 
+                        </wm-composite> 
+                        <wm-button class="btn-default" caption="Get Shipped Date" type="button" margin="unset 0.5em" name="button_Data2" on-click="Variables.Procedure_IN_IN_OUT.invoke()"></wm-button> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn6_1"> 
+                        <wm-composite name="composite6"> 
+                            <wm-label class="col-md-3 control-label" name="label8" caption="Order Number"></wm-label> 
+                            <wm-container class="col-md-9" name="container6"> 
+                                <wm-text name="text_OrdrNumber" placeholder="Enter Order Number displayed in Select Widget"></wm-text> 
+                            </wm-container> 
+                        </wm-composite> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow4_1"> 
+                    <wm-gridcolumn columnwidth="12" name="gridcolumn7_1"> 
+                        <wm-label padding="unset 0.5em" name="label7" fontsize="1.4" fontunit="em" caption="bind:'Shipped Date: <b>'+Variables.Procedure_IN_IN_OUT.dataSet[$i].shipDate+'</b>'"></wm-label> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+        </wm-tabpane> 
+        <wm-tabpane name="tabpane3" title="IN_IN_INOUT Combination"> 
+            <wm-layoutgrid name="layoutgrid3" columns="3"> 
+                <wm-gridrow name="gridrow7"> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn12"> 
+                        <wm-composite name="composite6_1"> 
+                            <wm-label class="col-md-3 control-label" name="label8_1" caption="Required Date"></wm-label> 
+                            <wm-container class="col-md-9" name="container6_1"> 
+                                <wm-select name="select_reqDate1" dataset="bind:Variables.LV_Orders.dataSet" datafield="requiredDate" displayexpression="bind:$[data[$i].requiredDate]+' Order NO.:'+$[data[$i].orderNumber]+' Shipped Date:'+$[data[$i].shippedDate]"></wm-select> 
+                            </wm-container> 
+                        </wm-composite> 
+                        <wm-button class="btn-default" caption="Get Shipping Date" type="button" margin="unset 0.5em" name="button_Data3" on-click="Variables.Procedure_IN_IN_INOUT.invoke()"></wm-button> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn13"> 
+                        <wm-composite name="composite7"> 
+                            <wm-label class="col-md-3 control-label" name="label9" caption="Order Number"></wm-label> 
+                            <wm-container class="col-md-9" name="container7"> 
+                                <wm-text name="text_OrderNum1"></wm-text> 
+                            </wm-container> 
+                        </wm-composite> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn14"> 
+                        <wm-composite name="composite8"> 
+                            <wm-label class="col-md-3 control-label" name="label10" caption="Shipping Date"></wm-label> 
+                            <wm-container class="col-md-9" name="container8"> 
+                                <wm-date name="date_ShiDate1"></wm-date> 
+                            </wm-container> 
+                        </wm-composite> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow8"> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn15"> 
+                        <wm-label padding="unset 0.5em" name="label11" caption="bind:'Shipping Date: <b>'+Variables.Procedure_IN_IN_INOUT.dataSet[$i].shipDate+'</b>'" fontsize="1.4" fontunit="em"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn16"></wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn17"></wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+        </wm-tabpane> 
+        <wm-tabpane name="tabpane4" title="IN_OUT_IN Combination"> 
+            <wm-form errormessage="" captionposition="top" title="bind:'Your Result is: '+Variables.PROCEDURE_IN_OUT_IN.dataSet[$i].Result" enctype="application/x-www-form-urlencoded" method="get" dataset="bind:Variables.PROCEDURE_IN_OUT_IN.dataSet" captionalign="left" name="form_IN_OUT_IN" subheading="numerator/denominator"> 
+                <wm-layoutgrid columns="2" name="layoutgrid5"> 
+                    <wm-gridrow name="gridrow9"> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn18"> 
+                            <wm-form-field readonly="false" name="Numerator" displayname="Numerator" key="Numerator" type="integer" show="true" widget="number"></wm-form-field> 
+                        </wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn19"> 
+                            <wm-form-field readonly="false" name="Denominator" displayname="Denominator" key="Denominator" type="integer" show="true" widget="number"></wm-form-field> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                </wm-layoutgrid> 
+                <wm-buttongroup horizontalalign="right" class="form-action col-md-12" name="buttongroup1"> 
+                    <wm-button caption="Get Result" type="submit" class="btn-primary" name="button6"></wm-button> 
+                </wm-buttongroup> 
+            </wm-form> 
+        </wm-tabpane> 
+        <wm-tabpane name="tabpane5" title="IN_OUT_OUT Combination"> 
+            <wm-composite name="composite9"> 
+                <wm-label class="col-md-3 control-label" name="label12" caption="Customer Number"></wm-label> 
+                <wm-container class="col-md-9" name="container9"> 
+                    <wm-select name="select_CustNumber2" dataset="bind:Variables.LV_CustomerData.dataSet" datafield="customerNumber" displayfield="customerNumber"></wm-select> 
+                </wm-container> 
+            </wm-composite> 
+            <wm-label padding="unset 0.5em" name="label13" caption="bind:'Resolved id: <b>'+Variables.Procedure_IN_OUT_OUT.dataSet[$i].Resolve+'</b>, Cancelled: <b>'+Variables.Procedure_IN_OUT_OUT.dataSet[$i].Cancel+'</b> , Dispute: <b>'+Variables.Procedure_IN_OUT_OUT.dataSet[$i].Dispute+'</b>, InProcess: <b>'+Variables.Procedure_IN_OUT_OUT.dataSet[$i].InProcess+'</b> , OnHold: <b>'+Variables.Procedure_IN_OUT_OUT.dataSet[$i].OnHold+'</b>, ship: <b>'+Variables.Procedure_IN_OUT_OUT.dataSet[$i].Ship+'</b>'" fontsize="1.4" fontunit="em"></wm-label> 
+        </wm-tabpane> 
+        <wm-tabpane name="tabpane6" title="IN_OUT_INOUT Combination"> 
+            <wm-form errormessage="" captionposition="left" title="bind:'Your Result is: <b>'+Variables.Procedure_IN_OUT_INOUT.dataSet[$i].result1+'</b> and Denominator is: <b>'+Variables.Procedure_IN_OUT_INOUT.dataSet[$i].denominator+'</b>'" enctype="application/x-www-form-urlencoded" method="get" dataset="bind:Variables.Procedure_IN_OUT_INOUT.dataSet" captionalign="left" name="form_IN_OUT_INOUT"> 
+                <wm-layoutgrid columns="2" name="layoutgrid5_1"> 
+                    <wm-gridrow name="gridrow8_1"> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn16_1"> 
+                            <wm-form-field readonly="false" name="numerator" displayname="Numerator" key="numerator" type="integer" show="true" widget="number"></wm-form-field> 
+                        </wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn17_1"> 
+                            <wm-form-field readonly="false" name="denominator" displayname="Denominator" key="denominator" type="integer" show="true" widget="number"></wm-form-field> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                </wm-layoutgrid> 
+                <wm-buttongroup horizontalalign="right" class="form-action col-md-12" name="buttongroup2"> 
+                    <wm-button caption="Get Result" type="submit" class="btn-primary" name="button7" on-click="Variables.Procedure_IN_OUT_INOUT.invoke()"></wm-button> 
+                </wm-buttongroup> 
+            </wm-form> 
+            <wm-label padding="unset 0.5em" name="label14" caption="bind:'Your Result is: <b>'+Variables.Procedure_IN_OUT_INOUT.dataSet[$i].result1+'</b> and Denominator is: <b>'+Variables.Procedure_IN_OUT_INOUT.dataSet[$i].denominator+'</b>'"></wm-label> 
+        </wm-tabpane> 
+        <wm-tabpane name="tabpane7" title="IN_INOUT_IN Combination"> 
+            <wm-form errormessage="" captionposition="top" title="bind:'Your Result is: <b>'+Variables.Procedure_IN_INOUT_IN.dataSet[$i].res+'</b>'" enctype="application/x-www-form-urlencoded" method="get" dataset="bind:Variables.Procedure_IN_INOUT_IN.dataSet" captionalign="left" name="form_IN_INOUT_IN" subheading="Divide=numerator/denominator"> 
+                <wm-layoutgrid columns="2" name="layoutgrid6"> 
+                    <wm-gridrow name="gridrow9_1"> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn18_1"> 
+                            <wm-form-field readonly="false" name="numerator" displayname="Numerator" key="numerator" type="integer" show="true" widget="number"></wm-form-field> 
+                        </wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn19_1"> 
+                            <wm-form-field readonly="false" name="res" displayname="Res" key="res" type="integer" show="true" widget="number"></wm-form-field> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                    <wm-gridrow name="gridrow10"> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn20"> 
+                            <wm-form-field readonly="false" name="denominator" displayname="Denominator" key="denominator" type="integer" show="true" widget="number"></wm-form-field> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                </wm-layoutgrid> 
+                <wm-buttongroup horizontalalign="right" class="form-action col-md-12" name="buttongroup3"> 
+                    <wm-button caption="Get Result" type="submit" class="btn-primary" name="button8" on-click="Variables.Procedure_IN_INOUT_IN.invoke()"></wm-button> 
+                </wm-buttongroup> 
+            </wm-form> 
+        </wm-tabpane> 
+        <wm-tabpane name="tabpane8" title="IN_INOUT_OUT Combination"> 
+            <wm-form errormessage="" captionposition="top" title="bind:'Your Shipping Date: '+Variables.Procedure_IN_INOUT_OUT.dataSet[$i].shipDate+' Order Number is:'+Variables.Procedure_IN_INOUT_OUT.dataSet[$i].ordNumber" enctype="application/x-www-form-urlencoded" method="get" dataset="bind:Variables.Procedure_IN_INOUT_OUT.dataSet" captionalign="left" name="form_IN_INOUT_OUT"> 
+                <wm-layoutgrid columns="2" name="layoutgrid7"> 
+                    <wm-gridrow name="gridrow11"> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn21"> 
+                            <wm-form-field name="ordNumber" displayname="Ord Number" key="ordNumber" type="integer" show="true" widget="select" inputtype="number" placeholder="Enter value" dataset="bind:Variables.LV_Orders.dataSet" datafield="orderNumber" displayexpression="bind:$[data[$i].orderNumber]+' Required Date:'+$[data[$i].requiredDate]"></wm-form-field> 
+                        </wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn22"> 
+                            <wm-form-field name="reqDate" displayname="Req Date" key="reqDate" type="string" show="true" widget="date" placeholder="Select the date given in the select widget"></wm-form-field> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                </wm-layoutgrid> 
+                <wm-buttongroup horizontalalign="right" class="form-action col-md-12" name="buttongroup4"> 
+                    <wm-button caption="Save" type="submit" class="btn-primary" name="button9" on-click="Variables.Procedure_IN_INOUT_OUT.invoke()"></wm-button> 
+                </wm-buttongroup> 
+            </wm-form> 
+        </wm-tabpane> 
+        <wm-tabpane name="tabpane9" title="IN_INOUT_INOUT Combination"> 
+            <wm-form errormessage="" captionposition="top" title="bind:'Your Order Number is: '+Variables.Procedure_IN_INOUT_INOUT.dataSet[$i].ordNumber+'   and Shipping Date is: '+Variables.Procedure_IN_INOUT_INOUT.dataSet[$i].shipDate" enctype="application/x-www-form-urlencoded" method="get" dataset="bind:Variables.Procedure_IN_INOUT_INOUT.dataSet" captionalign="left" name="form_IN_INOUT_INOUT"> 
+                <wm-layoutgrid columns="2" name="layoutgrid8"> 
+                    <wm-gridrow name="gridrow12"> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn23"> 
+                            <wm-form-field name="reqDate" displayname="Req Date" key="reqDate" type="string" show="true" widget="select" placeholder="Select date" dataset="bind:Variables.LV_Orders.dataSet" datafield="requiredDate" displayexpression="bind:$[data[$i].requiredDate]+' OrderNo.:'+$[data[$i].orderNumber]+' Ship date:'+$[data[$i].shippedDate]"></wm-form-field> 
+                        </wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn24"> 
+                            <wm-form-field name="ordNumber" displayname="Ord Number" key="ordNumber" type="integer" show="true" widget="number" inputtype="number" placeholder="Enter value"></wm-form-field> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                    <wm-gridrow name="gridrow13"> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn25"> 
+                            <wm-form-field name="shipDate" displayname="Ship Date" key="shipDate" type="string" show="true" widget="date" placeholder="Select date"></wm-form-field> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                </wm-layoutgrid> 
+                <wm-buttongroup horizontalalign="right" class="form-action col-md-12" name="buttongroup5"> 
+                    <wm-button caption="Get Details" type="submit" class="btn-primary" name="button10" on-click="Variables.Procedure_IN_INOUT_INOUT.invoke()"></wm-button> 
+                </wm-buttongroup> 
+            </wm-form> 
+        </wm-tabpane> 
+    </wm-tabs> 
+</wm-partial>
