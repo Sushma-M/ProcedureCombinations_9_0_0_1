@@ -1,109 +1,64 @@
 {
-  "name" : "ClassicModelsDB",
-  "description" : "Procedure for ClassicModelsDB",
-  "procedures" : [ {
-    "name" : "Procedure_OUT_OUT_IN",
-    "procedure" : "call getOfficeAddress(:addrLine1,:addrLine2,:offCode)",
-    "comment" : "Procedure with out, out, in",
-    "description" : null,
-    "outputType" : null,
-    "returnsSingleResult" : false,
-    "procedureParams" : [ {
-      "paramName" : "addrLine1",
-      "procedureParamType" : "OUT",
-      "valueType" : "java.lang.String",
+  "Procedure_OUT_OUT_IN" : {
+    "procedureString" : "call getOfficeAddress(?,?,?)",
+    "parameters" : [ {
+      "name" : "addrLine1",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
       "testValue" : "",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
+      "required" : false,
+      "parameterType" : "OUT"
     }, {
-      "paramName" : "addrLine2",
-      "procedureParamType" : "OUT",
-      "valueType" : "java.lang.String",
+      "name" : "addrLine2",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
       "testValue" : "",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
+      "required" : false,
+      "parameterType" : "OUT"
     }, {
-      "paramName" : "offCode",
-      "procedureParamType" : "IN",
-      "valueType" : "java.lang.String",
+      "name" : "offCode",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
       "testValue" : "2",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    } ],
-    "returnTypeMetadata" : [ {
-      "element" : [ {
-        "name" : "addrLine1",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "addrLine2",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      } ],
-      "javaType" : "ClassicModelsDBProcedure_OUT_OUT_INrtnType",
-      "name" : "ClassicModelsDBProcedure_OUT_OUT_INrtnType"
+      "required" : false,
+      "parameterType" : "IN"
     } ]
-  }, {
-    "name" : "Procedure_OUT_OUT_INOUT",
-    "procedure" : "call getEmployeeDetails(:empEmail,:empJobTitle,:empNumber)",
-    "comment" : "Procedure with out, out and inout",
-    "description" : null,
-    "outputType" : null,
-    "returnsSingleResult" : false,
-    "procedureParams" : [ {
-      "paramName" : "empEmail",
-      "procedureParamType" : "OUT",
-      "valueType" : "java.lang.String",
+  },
+  "Procedure_OUT_OUT_INOUT" : {
+    "procedureString" : "call getEmployeeDetails(?,?,?)",
+    "parameters" : [ {
+      "name" : "empEmail",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
       "testValue" : "",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
+      "required" : false,
+      "parameterType" : "OUT"
     }, {
-      "paramName" : "empJobTitle",
-      "procedureParamType" : "OUT",
-      "valueType" : "java.lang.String",
+      "name" : "empJobTitle",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
       "testValue" : "",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
+      "required" : false,
+      "parameterType" : "OUT"
     }, {
-      "paramName" : "empNumber",
-      "procedureParamType" : "IN_OUT",
-      "valueType" : "java.lang.Integer",
+      "name" : "empNumber",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
       "testValue" : "1002",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    } ],
-    "returnTypeMetadata" : [ {
-      "element" : [ {
-        "name" : "empEmail",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "empJobTitle",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "empNumber",
-        "subType" : null,
-        "typeRef" : "java.lang.Integer",
-        "isList" : false,
-        "allowNull" : null
-      } ],
-      "javaType" : "ClassicModelsDBProcedure_OUT_OUT_INOUTrtnType",
-      "name" : "ClassicModelsDBProcedure_OUT_OUT_INOUTrtnType"
+      "required" : false,
+      "parameterType" : "IN_OUT"
     } ]
-  } ]
+  }
 }

@@ -12,6 +12,7 @@ import java.util.Objects;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.ForeignKey;
 import javax.persistence.Id;
 import javax.persistence.IdClass;
 import javax.persistence.JoinColumn;
@@ -31,8 +32,8 @@ public class Orderdetails implements Serializable {
     private int quantityOrdered;
     private BigDecimal priceEach;
     private short orderLineNumber;
-    private Orders orders;
     private Products products;
+    private Orders orders;
 
     @Id
     @Column(name = "`orderNumber`", nullable = false, scale = 0, precision = 10)
@@ -81,22 +82,8 @@ public class Orderdetails implements Serializable {
         this.orderLineNumber = orderLineNumber;
     }
 
-    
-    
-    public Orders getOrders() {
-        return this.orders;
-    }
-
-    public void setOrders(Orders orders) {
-        if(orders != null) {
-            this.orderNumber = orders.getOrderNumber();
-        }
-
-        this.orders = orders;
-    }
-
-    
-    
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "`productCode`", referencedColumnName = "`productCode`", insertable = false, updatable = false, foreignKey = @ForeignKey(name = "`orderdetails_ibfk_2`"))
     public Products getProducts() {
         return this.products;
     }
@@ -107,6 +94,20 @@ public class Orderdetails implements Serializable {
         }
 
         this.products = products;
+    }
+
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "`orderNumber`", referencedColumnName = "`orderNumber`", insertable = false, updatable = false, foreignKey = @ForeignKey(name = "`orderdetails_ibfk_1`"))
+    public Orders getOrders() {
+        return this.orders;
+    }
+
+    public void setOrders(Orders orders) {
+        if(orders != null) {
+            this.orderNumber = orders.getOrderNumber();
+        }
+
+        this.orders = orders;
     }
 
     @Override

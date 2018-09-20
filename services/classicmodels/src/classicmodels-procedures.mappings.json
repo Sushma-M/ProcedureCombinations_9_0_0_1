@@ -1,2217 +1,1213 @@
 {
-  "name" : "classicmodels",
-  "description" : "Procedure for classicmodels",
-  "procedures" : [ {
-    "name" : "Procedure_getProductDetails",
-    "procedure" : "call classicmodels.getProductDetails(:prodLine)",
-    "comment" : "egrzdvzf",
-    "description" : null,
-    "outputType" : null,
-    "returnsSingleResult" : false,
-    "procedureParams" : [ {
-      "paramName" : "prodLine",
-      "procedureParamType" : "IN",
-      "valueType" : "java.lang.String",
-      "testValue" : "Classic Cars",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    } ],
-    "returnTypeMetadata" : [ {
-      "element" : [ {
-        "name" : "ProductDesc",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "quantityInStock",
-        "subType" : null,
-        "typeRef" : "java.lang.Integer",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "buyPrice",
-        "subType" : null,
-        "typeRef" : "java.lang.Double",
-        "isList" : false,
-        "allowNull" : null
-      } ],
-      "javaType" : "classicmodelsProcedure_getProductDetailsrtnType",
-      "name" : "classicmodelsProcedure_getProductDetailsrtnType"
-    } ]
-  }, {
-    "name" : "Procedure_IN",
-    "procedure" : "call getEmpDetails(:empNumber)",
-    "comment" : "Only\nIN - Int",
-    "description" : null,
-    "outputType" : "classicmodelsProcedure_INrtnType",
-    "returnsSingleResult" : false,
-    "procedureParams" : [ {
-      "paramName" : "empNumber",
-      "procedureParamType" : "IN",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "1002",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    } ],
-    "returnTypeMetadata" : [ {
-      "element" : [ {
-        "name" : "employeeNumber",
-        "subType" : null,
-        "typeRef" : "java.lang.Integer",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "lastName",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "firstName",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "extension",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "email",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "officeCode",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "reportsTo",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "jobTitle",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      } ],
-      "javaType" : "classicmodelsProcedure_INrtnType",
-      "name" : "classicmodelsProcedure_INrtnType"
-    } ]
-  }, {
-    "name" : "Procedure_IN_IN",
-    "procedure" : "call getEmployeesByNumber(:empFName,:empNumber)",
-    "comment" : "IN - STRING\nIN - INT",
-    "description" : null,
-    "outputType" : "classicmodelsProcedure_IN_INrtnType",
-    "returnsSingleResult" : false,
-    "procedureParams" : [ {
-      "paramName" : "empFName",
-      "procedureParamType" : "IN",
-      "valueType" : "java.lang.String",
-      "testValue" : "Diane",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "empNumber",
-      "procedureParamType" : "IN",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "1002",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    } ],
-    "returnTypeMetadata" : [ {
-      "element" : [ {
-        "name" : "employeeNumber",
-        "subType" : null,
-        "typeRef" : "java.lang.Integer",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "lastName",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "firstName",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "extension",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "email",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "officeCode",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "reportsTo",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "jobTitle",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      } ],
-      "javaType" : "classicmodelsProcedure_IN_INrtnType",
-      "name" : "classicmodelsProcedure_IN_INrtnType"
-    } ]
-  }, {
-    "name" : "Procedure_IN_IN_IN",
-    "procedure" : "call insert_article_tags(:art_id, :tag_id, :blnak)",
-    "comment" : "IN- INT\nIN- INT\nIN- STRING",
-    "description" : null,
-    "outputType" : "classicmodelsProcedure_IN_IN_INrtnType",
-    "returnsSingleResult" : false,
-    "procedureParams" : [ {
-      "paramName" : "art_id",
-      "procedureParamType" : "IN",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "1",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "tag_id",
-      "procedureParamType" : "IN",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "4",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "blnak",
-      "procedureParamType" : "IN",
-      "valueType" : "java.lang.String",
-      "testValue" : "test2",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    } ],
-    "returnTypeMetadata" : [ {
-      "element" : [ {
-        "name" : "msg",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      } ],
-      "javaType" : "classicmodelsProcedure_IN_IN_INrtnType",
-      "name" : "classicmodelsProcedure_IN_IN_INrtnType"
-    } ]
-  }, {
-    "name" : "Procedure_IN_IN_INOUT",
-    "procedure" : "CALL GetShippedDate3_InInInOut(:reqDate,:ordNumber,:shipDate)",
-    "comment" : "IN - DATE\nIN - INT \nINOUT - DATE",
-    "description" : null,
-    "outputType" : "classicmodelsProcedure_IN_IN_INOUTrtnType",
-    "returnsSingleResult" : false,
-    "procedureParams" : [ {
-      "paramName" : "reqDate",
-      "procedureParamType" : "IN",
-      "valueType" : "java.sql.Date",
-      "testValue" : "2003-01-13",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "ordNumber",
-      "procedureParamType" : "IN",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "10100",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "shipDate",
-      "procedureParamType" : "IN_OUT",
-      "valueType" : "java.sql.Date",
-      "testValue" : "2003-01-10",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    } ],
-    "returnTypeMetadata" : [ {
-      "element" : [ {
-        "name" : "shipDate",
-        "subType" : null,
-        "typeRef" : "java.sql.Date",
-        "isList" : false,
-        "allowNull" : null
-      } ],
-      "javaType" : "classicmodelsProcedure_IN_IN_INOUTrtnType",
-      "name" : "classicmodelsProcedure_IN_IN_INOUTrtnType"
-    } ]
-  }, {
-    "name" : "Procedure_IN_IN_OUT",
-    "procedure" : "call classicmodels.getShippedDate(:RequiredDate,:OrderNumber, :shipDate)",
-    "comment" : "IN - DATE\nIN - INT\nOUT - DATE",
-    "description" : null,
-    "outputType" : "classicmodelsProcedure_IN_IN_OUTrtnType",
-    "returnsSingleResult" : false,
-    "procedureParams" : [ {
-      "paramName" : "RequiredDate",
-      "procedureParamType" : "IN",
-      "valueType" : "java.sql.Date",
-      "testValue" : "2003-01-18",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "OrderNumber",
-      "procedureParamType" : "IN",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "10102",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "shipDate",
-      "procedureParamType" : "OUT",
-      "valueType" : "java.sql.Date",
-      "testValue" : "",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    } ],
-    "returnTypeMetadata" : [ {
-      "element" : [ {
-        "name" : "shipDate",
-        "subType" : null,
-        "typeRef" : "java.sql.Date",
-        "isList" : false,
-        "allowNull" : null
-      } ],
-      "javaType" : "classicmodelsProcedure_IN_IN_OUTrtnType",
-      "name" : "classicmodelsProcedure_IN_IN_OUTrtnType"
-    } ]
-  }, {
-    "name" : "Procedure_IN_INOUT",
-    "procedure" : "call getCustomerLevel_In_Inout(:custnum,:customerLevel)",
-    "comment" : "IN - INT\nINOUT - STRING",
-    "description" : null,
-    "outputType" : "classicmodelsProcedure_IN_INOUTrtnType",
-    "returnsSingleResult" : false,
-    "procedureParams" : [ {
-      "paramName" : "custnum",
-      "procedureParamType" : "IN",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "103",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "customerLevel",
-      "procedureParamType" : "IN_OUT",
-      "valueType" : "java.lang.String",
-      "testValue" : "xxx",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    } ],
-    "returnTypeMetadata" : [ {
-      "element" : [ {
-        "name" : "customerLevel",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      } ],
-      "javaType" : "classicmodelsProcedure_IN_INOUTrtnType",
-      "name" : "classicmodelsProcedure_IN_INOUTrtnType"
-    } ]
-  }, {
-    "name" : "Procedure_IN_INOUT_IN",
-    "procedure" : "call Divide3(:numerator,:res,:denominator)",
-    "comment" : "IN - INT\nINOUT - INT\nIN - INT",
-    "description" : null,
-    "outputType" : "classicmodelsProcedure_IN_INOUT_INrtnType",
-    "returnsSingleResult" : false,
-    "procedureParams" : [ {
-      "paramName" : "numerator",
-      "procedureParamType" : "IN",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "21",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "res",
-      "procedureParamType" : "IN_OUT",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "6",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "denominator",
-      "procedureParamType" : "IN",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "3",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    } ],
-    "returnTypeMetadata" : [ {
-      "element" : [ {
-        "name" : "res",
-        "subType" : null,
-        "typeRef" : "java.lang.Integer",
-        "isList" : false,
-        "allowNull" : null
-      } ],
-      "javaType" : "classicmodelsProcedure_IN_INOUT_INrtnType",
-      "name" : "classicmodelsProcedure_IN_INOUT_INrtnType"
-    } ]
-  }, {
-    "name" : "Procedure_IN_INOUT_INOUT",
-    "procedure" : "call GetShippedDate4(:reqDate,:ordNumber,:shipDate)",
-    "comment" : "IN - DATE\nINOUT - INT\nINOUT - DATE",
-    "description" : null,
-    "outputType" : "classicmodelsProcedure_IN_INOUT_INOUTrtnType",
-    "returnsSingleResult" : false,
-    "procedureParams" : [ {
-      "paramName" : "reqDate",
-      "procedureParamType" : "IN",
-      "valueType" : "java.sql.Date",
-      "testValue" : "2003-01-13",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "ordNumber",
-      "procedureParamType" : "IN_OUT",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "10100",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "shipDate",
-      "procedureParamType" : "IN_OUT",
-      "valueType" : "java.sql.Date",
-      "testValue" : "2003-01-10",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    } ],
-    "returnTypeMetadata" : [ {
-      "element" : [ {
-        "name" : "ordNumber",
-        "subType" : null,
-        "typeRef" : "java.lang.Integer",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "shipDate",
-        "subType" : null,
-        "typeRef" : "java.sql.Date",
-        "isList" : false,
-        "allowNull" : null
-      } ],
-      "javaType" : "classicmodelsProcedure_IN_INOUT_INOUTrtnType",
-      "name" : "classicmodelsProcedure_IN_INOUT_INOUTrtnType"
-    } ]
-  }, {
-    "name" : "Procedure_IN_INOUT_OUT",
-    "procedure" : "call getShippedDate_In_InOut_Out(:reqDate,:ordNumber,:shipDate)",
-    "comment" : "IN - DATE\nINOUT- INT \nOUT - DATE",
-    "description" : null,
-    "outputType" : "classicmodelsProcedure_IN_INOUT_OUTrtnType",
-    "returnsSingleResult" : false,
-    "procedureParams" : [ {
-      "paramName" : "reqDate",
-      "procedureParamType" : "IN",
-      "valueType" : "java.sql.Date",
-      "testValue" : "2003-01-13",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "ordNumber",
-      "procedureParamType" : "IN_OUT",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "10100",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "shipDate",
-      "procedureParamType" : "OUT",
-      "valueType" : "java.sql.Date",
-      "testValue" : "",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    } ],
-    "returnTypeMetadata" : [ {
-      "element" : [ {
-        "name" : "ordNumber",
-        "subType" : null,
-        "typeRef" : "java.lang.Integer",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "shipDate",
-        "subType" : null,
-        "typeRef" : "java.sql.Date",
-        "isList" : false,
-        "allowNull" : null
-      } ],
-      "javaType" : "classicmodelsProcedure_IN_INOUT_OUTrtnType",
-      "name" : "classicmodelsProcedure_IN_INOUT_OUTrtnType"
-    } ]
-  }, {
-    "name" : "Procedure_IN_IsList",
-    "procedure" : "call getCustomerList(:custNumber)",
-    "comment" : "IN - STRING\nCheck IsList",
-    "description" : null,
-    "outputType" : "classicmodelsProcedure_IN_IsListrtnType",
-    "returnsSingleResult" : false,
-    "procedureParams" : [ {
-      "paramName" : "custNumber",
-      "procedureParamType" : "IN",
-      "valueType" : "java.lang.String",
-      "testValue" : "103,112",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    } ],
-    "returnTypeMetadata" : [ {
-      "element" : [ {
-        "name" : "customerNumber",
-        "subType" : null,
-        "typeRef" : "java.lang.Integer",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "customerName",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "contactLastName",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "contactFirstName",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "phone",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "addressLine1",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "addressLine2",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "city",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "state",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "postalCode",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "country",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "salesRepEmployeeNumber",
-        "subType" : null,
-        "typeRef" : "java.lang.Integer",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "creditLimit",
-        "subType" : null,
-        "typeRef" : "java.lang.Double",
-        "isList" : false,
-        "allowNull" : null
-      } ],
-      "javaType" : "classicmodelsProcedure_IN_IsListrtnType",
-      "name" : "classicmodelsProcedure_IN_IsListrtnType"
-    } ]
-  }, {
-    "name" : "Procedure_IN_OUT",
-    "procedure" : "call GetCustomerShippingCase(:CustomerNumber,:p_shipping)",
-    "comment" : "IN - INT\nOUT - STRING",
-    "description" : null,
-    "outputType" : "classicmodelsProcedure_IN_OUTrtnType",
-    "returnsSingleResult" : false,
-    "procedureParams" : [ {
-      "paramName" : "CustomerNumber",
-      "procedureParamType" : "IN",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "112",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "p_shipping",
-      "procedureParamType" : "OUT",
-      "valueType" : "java.lang.String",
-      "testValue" : "",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    } ],
-    "returnTypeMetadata" : [ {
-      "element" : [ {
-        "name" : "p_shipping",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      } ],
-      "javaType" : "classicmodelsProcedure_IN_OUTrtnType",
-      "name" : "classicmodelsProcedure_IN_OUTrtnType"
-    } ]
-  }, {
-    "name" : "PROCEDURE_IN_OUT_IN",
-    "procedure" : "call classicmodels.Divide2(:Numerator,:Result,:Denominator)",
-    "comment" : "IN - INT\nOUT - DOUBLE \nIN - INT",
-    "description" : null,
-    "outputType" : "classicmodelsPROCEDURE_IN_OUT_INrtnType",
-    "returnsSingleResult" : false,
-    "procedureParams" : [ {
-      "paramName" : "Numerator",
-      "procedureParamType" : "IN",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "15",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "Result",
-      "procedureParamType" : "OUT",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "Denominator",
-      "procedureParamType" : "IN",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "3",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    } ],
-    "returnTypeMetadata" : [ {
-      "element" : [ {
-        "name" : "Result",
-        "subType" : null,
-        "typeRef" : "java.lang.Integer",
-        "isList" : false,
-        "allowNull" : null
-      } ],
-      "javaType" : "classicmodelsPROCEDURE_IN_OUT_INrtnType",
-      "name" : "classicmodelsPROCEDURE_IN_OUT_INrtnType"
-    } ]
-  }, {
-    "name" : "Procedure_IN_OUT_INOUT",
-    "procedure" : "call Divide_In_Out_InOut(:numerator,:result1,:denominator)",
-    "comment" : "IN - INT\nOUT - FLOAT\nINOUT - INT",
-    "description" : null,
-    "outputType" : "classicmodelsProcedure_IN_OUT_INOUTrtnType",
-    "returnsSingleResult" : false,
-    "procedureParams" : [ {
-      "paramName" : "numerator",
-      "procedureParamType" : "IN",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "21",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "result1",
-      "procedureParamType" : "OUT",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "denominator",
-      "procedureParamType" : "IN_OUT",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "3",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    } ],
-    "returnTypeMetadata" : [ {
-      "element" : [ {
-        "name" : "result1",
-        "subType" : null,
-        "typeRef" : "java.lang.Integer",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "denominator",
-        "subType" : null,
-        "typeRef" : "java.lang.Integer",
-        "isList" : false,
-        "allowNull" : null
-      } ],
-      "javaType" : "classicmodelsProcedure_IN_OUT_INOUTrtnType",
-      "name" : "classicmodelsProcedure_IN_OUT_INOUTrtnType"
-    } ]
-  }, {
-    "name" : "Procedure_IN_OUT_OUT",
-    "procedure" : "call get_order_by_cust(:cutomerNumber,:Ship, :Cancel, :Resolve, :Dispute, :InProcess, :OnHold)",
-    "comment" : "IN - INT\nOUT - INT\n OUT - INT\nOUT - INT\n OUT - INT\nOUT - INT\n OUT - INT",
-    "description" : null,
-    "outputType" : "classicmodelsProcedure_IN_OUT_OUTrtnType",
-    "returnsSingleResult" : false,
-    "procedureParams" : [ {
-      "paramName" : "cutomerNumber",
-      "procedureParamType" : "IN",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "103",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "Ship",
-      "procedureParamType" : "OUT",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "Cancel",
-      "procedureParamType" : "OUT",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "Resolve",
-      "procedureParamType" : "OUT",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "Dispute",
-      "procedureParamType" : "OUT",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "InProcess",
-      "procedureParamType" : "OUT",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "OnHold",
-      "procedureParamType" : "OUT",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    } ],
-    "returnTypeMetadata" : [ {
-      "element" : [ {
-        "name" : "Ship",
-        "subType" : null,
-        "typeRef" : "java.lang.Integer",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "Cancel",
-        "subType" : null,
-        "typeRef" : "java.lang.Integer",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "Resolve",
-        "subType" : null,
-        "typeRef" : "java.lang.Integer",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "Dispute",
-        "subType" : null,
-        "typeRef" : "java.lang.Integer",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "InProcess",
-        "subType" : null,
-        "typeRef" : "java.lang.Integer",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "OnHold",
-        "subType" : null,
-        "typeRef" : "java.lang.Integer",
-        "isList" : false,
-        "allowNull" : null
-      } ],
-      "javaType" : "classicmodelsProcedure_IN_OUT_OUTrtnType",
-      "name" : "classicmodelsProcedure_IN_OUT_OUTrtnType"
-    } ]
-  }, {
-    "name" : "Procedure_IN_STRING",
-    "procedure" : "call classicmodels.GetOfficeByCountry(:countryname)",
-    "comment" : "IN - STRING",
-    "description" : null,
-    "outputType" : "classicmodelsProcedure_IN_STRINGrtnType",
-    "returnsSingleResult" : false,
-    "procedureParams" : [ {
-      "paramName" : "countryname",
-      "procedureParamType" : "IN",
-      "valueType" : "java.lang.String",
-      "testValue" : "USA",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    } ],
-    "returnTypeMetadata" : [ {
-      "element" : [ {
-        "name" : "officeCode",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "city",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "phone",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "addressLine1",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "addressLine2",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "state",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "country",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "postalCode",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "territory",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      } ],
-      "javaType" : "classicmodelsProcedure_IN_STRINGrtnType",
-      "name" : "classicmodelsProcedure_IN_STRINGrtnType"
-    } ]
-  }, {
-    "name" : "Procedure_INOUT",
-    "procedure" : "call getEmpNumber(:empNumber)",
-    "comment" : "INOUT - INT",
-    "description" : null,
-    "outputType" : "classicmodelsProcedure_INOUTrtnType",
-    "returnsSingleResult" : false,
-    "procedureParams" : [ {
-      "paramName" : "empNumber",
-      "procedureParamType" : "IN_OUT",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "1002",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    } ],
-    "returnTypeMetadata" : [ {
-      "element" : [ {
-        "name" : "empNumber",
-        "subType" : null,
-        "typeRef" : "java.lang.Integer",
-        "isList" : false,
-        "allowNull" : null
-      } ],
-      "javaType" : "classicmodelsProcedure_INOUTrtnType",
-      "name" : "classicmodelsProcedure_INOUTrtnType"
-    } ]
-  }, {
-    "name" : "Procedure_INOUT_IN",
-    "procedure" : "call classicmodels.getShippedDate2(:GiveRequiredDateGetShippedDate, :orderNumber)",
-    "comment" : "INOUT - DATE\nIN - INT",
-    "description" : null,
-    "outputType" : null,
-    "returnsSingleResult" : false,
-    "procedureParams" : [ {
-      "paramName" : "GiveRequiredDateGetShippedDate",
-      "procedureParamType" : "IN_OUT",
-      "valueType" : "java.sql.Date",
-      "testValue" : "2003-01-13",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "orderNumber",
-      "procedureParamType" : "IN",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "10100",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    } ],
-    "returnTypeMetadata" : [ {
-      "element" : [ {
-        "name" : "GiveRequiredDateGetShippedDate",
-        "subType" : null,
-        "typeRef" : "java.sql.Date",
-        "isList" : false,
-        "allowNull" : null
-      } ],
-      "javaType" : "classicmodelsProcedure_INOUT_INrtnType",
-      "name" : "classicmodelsProcedure_INOUT_INrtnType"
-    } ]
-  }, {
-    "name" : "Procedure_INOUT_IN_IN",
-    "procedure" : "CALL Divide_InOut_In_In(:result1,:numerator,:denominator)",
-    "comment" : "INOUT - INT\nIN - INT\nIN - INT",
-    "description" : null,
-    "outputType" : "classicmodelsProcedure_INOUT_IN_INrtnType",
-    "returnsSingleResult" : false,
-    "procedureParams" : [ {
-      "paramName" : "result1",
-      "procedureParamType" : "IN_OUT",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "8",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "numerator",
-      "procedureParamType" : "IN",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "12",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "denominator",
-      "procedureParamType" : "IN",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "2",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    } ],
-    "returnTypeMetadata" : [ {
-      "element" : [ {
-        "name" : "result1",
-        "subType" : null,
-        "typeRef" : "java.lang.Integer",
-        "isList" : false,
-        "allowNull" : null
-      } ],
-      "javaType" : "classicmodelsProcedure_INOUT_IN_INrtnType",
-      "name" : "classicmodelsProcedure_INOUT_IN_INrtnType"
-    } ]
-  }, {
-    "name" : "Procedure_INOUT_IN_INOUT",
-    "procedure" : "call Divide_InOut_In_Inout(:result1,:numerator,:denominator)",
-    "comment" : "INOUT - DOUBLE\nIN - INT\nINOUT - INT",
-    "description" : null,
-    "outputType" : "classicmodelsProcedure_INOUT_IN_INOUTrtnType",
-    "returnsSingleResult" : false,
-    "procedureParams" : [ {
-      "paramName" : "result1",
-      "procedureParamType" : "IN_OUT",
-      "valueType" : "java.lang.Double",
-      "testValue" : "7.5",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "numerator",
-      "procedureParamType" : "IN",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "7",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "denominator",
-      "procedureParamType" : "IN_OUT",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "2",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    } ],
-    "returnTypeMetadata" : [ {
-      "element" : [ {
-        "name" : "result1",
-        "subType" : null,
-        "typeRef" : "java.lang.Double",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "denominator",
-        "subType" : null,
-        "typeRef" : "java.lang.Integer",
-        "isList" : false,
-        "allowNull" : null
-      } ],
-      "javaType" : "classicmodelsProcedure_INOUT_IN_INOUTrtnType",
-      "name" : "classicmodelsProcedure_INOUT_IN_INOUTrtnType"
-    } ]
-  }, {
-    "name" : "Procedure_INOUT_IN_OUT",
-    "procedure" : "CALL Divide_InOut_In_Out(:numerator,:denominator,:result1)",
-    "comment" : "INOUT - INT\nIN - INT\nOUT - DOUBLE",
-    "description" : null,
-    "outputType" : "classicmodelsProcedure_INOUT_IN_OUTrtnType",
-    "returnsSingleResult" : false,
-    "procedureParams" : [ {
-      "paramName" : "numerator",
-      "procedureParamType" : "IN_OUT",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "22",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "denominator",
-      "procedureParamType" : "IN",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "11",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "result1",
-      "procedureParamType" : "OUT",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    } ],
-    "returnTypeMetadata" : [ {
-      "element" : [ {
-        "name" : "numerator",
-        "subType" : null,
-        "typeRef" : "java.lang.Integer",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "result1",
-        "subType" : null,
-        "typeRef" : "java.lang.Integer",
-        "isList" : false,
-        "allowNull" : null
-      } ],
-      "javaType" : "classicmodelsProcedure_INOUT_IN_OUTrtnType",
-      "name" : "classicmodelsProcedure_INOUT_IN_OUTrtnType"
-    } ]
-  }, {
-    "name" : "Procedure_INOUT_INOUT",
-    "procedure" : "call getCustomerLevel_Inout_Inout(:custnum,:customerLevel)",
-    "comment" : "INOUT - INT\nINOUT - STRING",
-    "description" : null,
-    "outputType" : "classicmodelsProcedure_INOUT_INOUTrtnType",
-    "returnsSingleResult" : false,
-    "procedureParams" : [ {
-      "paramName" : "custnum",
-      "procedureParamType" : "IN_OUT",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "103",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "customerLevel",
-      "procedureParamType" : "IN_OUT",
-      "valueType" : "java.lang.String",
-      "testValue" : "xxx",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    } ],
-    "returnTypeMetadata" : [ {
-      "element" : [ {
-        "name" : "custnum",
-        "subType" : null,
-        "typeRef" : "java.lang.Integer",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "customerLevel",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      } ],
-      "javaType" : "classicmodelsProcedure_INOUT_INOUTrtnType",
-      "name" : "classicmodelsProcedure_INOUT_INOUTrtnType"
-    } ]
-  }, {
-    "name" : "Procedure_INOUT_INOUT_IN",
-    "procedure" : "call classicmodels.set_counter2(:count1, :count2, :count3, :inc)",
-    "comment" : "INOUT - INT\nINOUT - INT\nINOUT - INT\nIN - INT",
-    "description" : null,
-    "outputType" : "classicmodelsProcedure_INOUT_INOUT_INrtnType",
-    "returnsSingleResult" : false,
-    "procedureParams" : [ {
-      "paramName" : "count1",
-      "procedureParamType" : "IN_OUT",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "2",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "count2",
-      "procedureParamType" : "IN_OUT",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "22",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "count3",
-      "procedureParamType" : "IN_OUT",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "15",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "inc",
-      "procedureParamType" : "IN",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "5",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    } ],
-    "returnTypeMetadata" : [ {
-      "element" : [ {
-        "name" : "count1",
-        "subType" : null,
-        "typeRef" : "java.lang.Integer",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "count2",
-        "subType" : null,
-        "typeRef" : "java.lang.Integer",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "count3",
-        "subType" : null,
-        "typeRef" : "java.lang.Integer",
-        "isList" : false,
-        "allowNull" : null
-      } ],
-      "javaType" : "classicmodelsProcedure_INOUT_INOUT_INrtnType",
-      "name" : "classicmodelsProcedure_INOUT_INOUT_INrtnType"
-    } ]
-  }, {
-    "name" : "Procedure_INOUT_INOUT_INOUT",
-    "procedure" : "call Divide_InOut_Inout_InOut(:numerator,:denominator,:result1)",
-    "comment" : "INOUT- INT\nINOUT- INT\nINOUT- DOUBLE",
-    "description" : null,
-    "outputType" : "classicmodelsProcedure_INOUT_INOUT_INOUTrtnType",
-    "returnsSingleResult" : false,
-    "procedureParams" : [ {
-      "paramName" : "numerator",
-      "procedureParamType" : "IN_OUT",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "22",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "denominator",
-      "procedureParamType" : "IN_OUT",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "11",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "result1",
-      "procedureParamType" : "IN_OUT",
-      "valueType" : "java.lang.Double",
-      "testValue" : "33",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    } ],
-    "returnTypeMetadata" : [ {
-      "element" : [ {
-        "name" : "numerator",
-        "subType" : null,
-        "typeRef" : "java.lang.Integer",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "denominator",
-        "subType" : null,
-        "typeRef" : "java.lang.Integer",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "result1",
-        "subType" : null,
-        "typeRef" : "java.lang.Double",
-        "isList" : false,
-        "allowNull" : null
-      } ],
-      "javaType" : "classicmodelsProcedure_INOUT_INOUT_INOUTrtnType",
-      "name" : "classicmodelsProcedure_INOUT_INOUT_INOUTrtnType"
-    } ]
-  }, {
-    "name" : "Procedure_INOUT_INOUT_OUT",
-    "procedure" : "call Divide_InOut_Inout_Out(:numerator,:denominator,:result1)",
-    "comment" : "INOUT - INT\nINOUT - INT\nOUT - DOUBLE",
-    "description" : null,
-    "outputType" : "classicmodelsProcedure_INOUT_INOUT_OUTrtnType",
-    "returnsSingleResult" : false,
-    "procedureParams" : [ {
-      "paramName" : "numerator",
-      "procedureParamType" : "IN_OUT",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "22",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "denominator",
-      "procedureParamType" : "IN_OUT",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "11",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "result1",
-      "procedureParamType" : "OUT",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    } ],
-    "returnTypeMetadata" : [ {
-      "element" : [ {
-        "name" : "numerator",
-        "subType" : null,
-        "typeRef" : "java.lang.Integer",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "denominator",
-        "subType" : null,
-        "typeRef" : "java.lang.Integer",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "result1",
-        "subType" : null,
-        "typeRef" : "java.lang.Integer",
-        "isList" : false,
-        "allowNull" : null
-      } ],
-      "javaType" : "classicmodelsProcedure_INOUT_INOUT_OUTrtnType",
-      "name" : "classicmodelsProcedure_INOUT_INOUT_OUTrtnType"
-    } ]
-  }, {
-    "name" : "Procedure_INOUT_OUT",
-    "procedure" : "call getCustomerLevel_Inout_out(:custnum,:customerLevel)",
-    "comment" : "INOUT - INT\nOUT - STRING",
-    "description" : null,
-    "outputType" : "classicmodelsProcedure_INOUT_OUTrtnType",
-    "returnsSingleResult" : false,
-    "procedureParams" : [ {
-      "paramName" : "custnum",
-      "procedureParamType" : "IN_OUT",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "103",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "customerLevel",
-      "procedureParamType" : "OUT",
-      "valueType" : "java.lang.String",
-      "testValue" : "",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    } ],
-    "returnTypeMetadata" : [ {
-      "element" : [ {
-        "name" : "custnum",
-        "subType" : null,
-        "typeRef" : "java.lang.Integer",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "customerLevel",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      } ],
-      "javaType" : "classicmodelsProcedure_INOUT_OUTrtnType",
-      "name" : "classicmodelsProcedure_INOUT_OUTrtnType"
-    } ]
-  }, {
-    "name" : "Procedure_INOUT_OUT_IN",
-    "procedure" : "call Divide_InOut_out_In(:numerator,:result1,:denominator)",
-    "comment" : "INOUT - INT\nOUT - DOUBLE \nIN - INT",
-    "description" : null,
-    "outputType" : "classicmodelsProcedure_INOUT_OUT_INrtnType",
-    "returnsSingleResult" : false,
-    "procedureParams" : [ {
-      "paramName" : "numerator",
-      "procedureParamType" : "IN_OUT",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "22",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "result1",
-      "procedureParamType" : "OUT",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "denominator",
-      "procedureParamType" : "IN",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "11",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    } ],
-    "returnTypeMetadata" : [ {
-      "element" : [ {
-        "name" : "numerator",
-        "subType" : null,
-        "typeRef" : "java.lang.Integer",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "result1",
-        "subType" : null,
-        "typeRef" : "java.lang.Integer",
-        "isList" : false,
-        "allowNull" : null
-      } ],
-      "javaType" : "classicmodelsProcedure_INOUT_OUT_INrtnType",
-      "name" : "classicmodelsProcedure_INOUT_OUT_INrtnType"
-    } ]
-  }, {
-    "name" : "Procedure_INOUT_OUT_INOUT",
-    "procedure" : "call Divide_InOut_out_Inout(:numerator,:result1,:denominator)",
-    "comment" : "INOUT- INT\nOUT - DOUBLE\nINOUT - INT",
-    "description" : null,
-    "outputType" : "classicmodelsProcedure_INOUT_OUT_INOUTrtnType",
-    "returnsSingleResult" : false,
-    "procedureParams" : [ {
-      "paramName" : "numerator",
-      "procedureParamType" : "IN_OUT",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "22",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "result1",
-      "procedureParamType" : "OUT",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "denominator",
-      "procedureParamType" : "IN_OUT",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "11",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    } ],
-    "returnTypeMetadata" : [ {
-      "element" : [ {
-        "name" : "numerator",
-        "subType" : null,
-        "typeRef" : "java.lang.Integer",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "result1",
-        "subType" : null,
-        "typeRef" : "java.lang.Integer",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "denominator",
-        "subType" : null,
-        "typeRef" : "java.lang.Integer",
-        "isList" : false,
-        "allowNull" : null
-      } ],
-      "javaType" : "classicmodelsProcedure_INOUT_OUT_INOUTrtnType",
-      "name" : "classicmodelsProcedure_INOUT_OUT_INOUTrtnType"
-    } ]
-  }, {
-    "name" : "Procedure_INOUT_OUT_OUT",
-    "procedure" : "call getReqDateStatus(:ordrDate,:reqDate,:ordrstatus)",
-    "comment" : "INOUT-- Date\nOUT -- Date\nOUT -- String",
-    "description" : null,
-    "outputType" : "classicmodelsProcedure_INOUT_OUT_OUTrtnType",
-    "returnsSingleResult" : false,
-    "procedureParams" : [ {
-      "paramName" : "ordrDate",
-      "procedureParamType" : "IN_OUT",
-      "valueType" : "java.sql.Date",
+  "Procedure_INOUT_OUT_OUT" : {
+    "procedureString" : "call getReqDateStatus(?,?,?)",
+    "parameters" : [ {
+      "name" : "ordrDate",
+      "type" : "date",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
       "testValue" : "2003-01-06",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
+      "required" : false,
+      "parameterType" : "IN_OUT"
     }, {
-      "paramName" : "reqDate",
-      "procedureParamType" : "OUT",
-      "valueType" : "java.sql.Date",
+      "name" : "reqDate",
+      "type" : "date",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
       "testValue" : "",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
+      "required" : false,
+      "parameterType" : "OUT"
     }, {
-      "paramName" : "ordrstatus",
-      "procedureParamType" : "OUT",
-      "valueType" : "java.lang.String",
+      "name" : "ordrstatus",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
       "testValue" : "",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    } ],
-    "returnTypeMetadata" : [ {
-      "element" : [ {
-        "name" : "ordrDate",
-        "subType" : null,
-        "typeRef" : "java.sql.Date",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "reqDate",
-        "subType" : null,
-        "typeRef" : "java.sql.Date",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "ordrstatus",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      } ],
-      "javaType" : "classicmodelsProcedure_INOUT_OUT_OUTrtnType",
-      "name" : "classicmodelsProcedure_INOUT_OUT_OUTrtnType"
+      "required" : false,
+      "parameterType" : "OUT"
     } ]
-  }, {
-    "name" : "Procedure_OUT",
-    "procedure" : "call getEmployeeEmailByID1002(:empEmail)",
-    "comment" : "OUT - STRING",
-    "description" : null,
-    "outputType" : "classicmodelsProcedure_OUTrtnType",
-    "returnsSingleResult" : false,
-    "procedureParams" : [ {
-      "paramName" : "empEmail",
-      "procedureParamType" : "OUT",
-      "valueType" : "java.lang.String",
-      "testValue" : "",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    } ],
-    "returnTypeMetadata" : [ {
-      "element" : [ {
-        "name" : "empEmail",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      } ],
-      "javaType" : "classicmodelsProcedure_OUTrtnType",
-      "name" : "classicmodelsProcedure_OUTrtnType"
-    } ]
-  }, {
-    "name" : "Procedure_OUT_IN",
-    "procedure" : "call getEmpFName(:empFName,:empNumber)",
-    "comment" : "OUT - STRING\nIN - INT",
-    "description" : null,
-    "outputType" : "classicmodelsProcedure_OUT_INrtnType",
-    "returnsSingleResult" : false,
-    "procedureParams" : [ {
-      "paramName" : "empFName",
-      "procedureParamType" : "OUT",
-      "valueType" : "java.lang.String",
-      "testValue" : "",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
+  },
+  "Procedure_INOUT_IN_IN" : {
+    "procedureString" : "CALL Divide_InOut_In_In(?,?,?)",
+    "parameters" : [ {
+      "name" : "result1",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "8",
+      "required" : false,
+      "parameterType" : "IN_OUT"
     }, {
-      "paramName" : "empNumber",
-      "procedureParamType" : "IN",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "1002",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    } ],
-    "returnTypeMetadata" : [ {
-      "element" : [ {
-        "name" : "empFName",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      } ],
-      "javaType" : "classicmodelsProcedure_OUT_INrtnType",
-      "name" : "classicmodelsProcedure_OUT_INrtnType"
-    } ]
-  }, {
-    "name" : "Procedure_OUT_IN_IN",
-    "procedure" : "call getPayment(:payDate,:custNumber,:checkNum)",
-    "comment" : "OUT - INT\nIN - DATE\nIN - STRING",
-    "description" : null,
-    "outputType" : "classicmodelsProcedure_OUT_IN_INrtnType",
-    "returnsSingleResult" : false,
-    "procedureParams" : [ {
-      "paramName" : "payDate",
-      "procedureParamType" : "OUT",
-      "valueType" : "java.sql.Date",
-      "testValue" : "",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
+      "name" : "numerator",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "12",
+      "required" : false,
+      "parameterType" : "IN"
     }, {
-      "paramName" : "custNumber",
-      "procedureParamType" : "IN",
-      "valueType" : "java.lang.Integer",
+      "name" : "denominator",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "2",
+      "required" : false,
+      "parameterType" : "IN"
+    } ]
+  },
+  "Procedure_INOUT_IN_INOUT" : {
+    "procedureString" : "call Divide_InOut_In_Inout(?,?,?)",
+    "parameters" : [ {
+      "name" : "result1",
+      "type" : "double",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "7.5",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    }, {
+      "name" : "numerator",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "7",
+      "required" : false,
+      "parameterType" : "IN"
+    }, {
+      "name" : "denominator",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "2",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    } ]
+  },
+  "Procedure_INOUT_IN_OUT" : {
+    "procedureString" : "CALL Divide_InOut_In_Out(?,?,?)",
+    "parameters" : [ {
+      "name" : "numerator",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "22",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    }, {
+      "name" : "denominator",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "11",
+      "required" : false,
+      "parameterType" : "IN"
+    }, {
+      "name" : "result1",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    } ]
+  },
+  "Procedure_IN_OUT" : {
+    "procedureString" : "call GetCustomerShippingCase(?,?)",
+    "parameters" : [ {
+      "name" : "CustomerNumber",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "112",
+      "required" : false,
+      "parameterType" : "IN"
+    }, {
+      "name" : "p_shipping",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    } ]
+  },
+  "Procedure_IN_INOUT_IN" : {
+    "procedureString" : "call Divide3(?,?,?)",
+    "parameters" : [ {
+      "name" : "numerator",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "21",
+      "required" : false,
+      "parameterType" : "IN"
+    }, {
+      "name" : "res",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "6",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    }, {
+      "name" : "denominator",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "3",
+      "required" : false,
+      "parameterType" : "IN"
+    } ]
+  },
+  "Procedure_OUT_IN_IN" : {
+    "procedureString" : "call getPayment(?,?,?)",
+    "parameters" : [ {
+      "name" : "payDate",
+      "type" : "date",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "custNumber",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
       "testValue" : "103",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
+      "required" : false,
+      "parameterType" : "IN"
     }, {
-      "paramName" : "checkNum",
-      "procedureParamType" : "IN",
-      "valueType" : "java.lang.String",
+      "name" : "checkNum",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
       "testValue" : "HQ336336",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    } ],
-    "returnTypeMetadata" : [ {
-      "element" : [ {
-        "name" : "payDate",
-        "subType" : null,
-        "typeRef" : "java.sql.Date",
-        "isList" : false,
-        "allowNull" : null
-      } ],
-      "javaType" : "classicmodelsProcedure_OUT_IN_INrtnType",
-      "name" : "classicmodelsProcedure_OUT_IN_INrtnType"
+      "required" : false,
+      "parameterType" : "IN"
     } ]
-  }, {
-    "name" : "Procedure_OUT_IN_INOUT",
-    "procedure" : "CALL getShippedDate_Out_In_Inout(:shipDate,:reqDate,:ordNumber)",
-    "comment" : "OUT - DATE\nIN - DATE\nINOUT - INT",
-    "description" : null,
-    "outputType" : "classicmodelsProcedure_OUT_IN_INOUTrtnType",
-    "returnsSingleResult" : false,
-    "procedureParams" : [ {
-      "paramName" : "shipDate",
-      "procedureParamType" : "OUT",
-      "valueType" : "java.sql.Date",
-      "testValue" : "",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
+  },
+  "Procedure_INOUT_INOUT_IN" : {
+    "procedureString" : "call classicmodels.set_counter2(?, ?, ?, ?)",
+    "parameters" : [ {
+      "name" : "count1",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "2",
+      "required" : false,
+      "parameterType" : "IN_OUT"
     }, {
-      "paramName" : "reqDate",
-      "procedureParamType" : "IN",
-      "valueType" : "java.sql.Date",
+      "name" : "count2",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "22",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    }, {
+      "name" : "count3",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "15",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    }, {
+      "name" : "inc",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "5",
+      "required" : false,
+      "parameterType" : "IN"
+    } ]
+  },
+  "Procedure_IN_INOUT_INOUT" : {
+    "procedureString" : "call GetShippedDate4(?,?,?)",
+    "parameters" : [ {
+      "name" : "reqDate",
+      "type" : "date",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
       "testValue" : "2003-01-13",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
+      "required" : false,
+      "parameterType" : "IN"
     }, {
-      "paramName" : "ordNumber",
-      "procedureParamType" : "IN_OUT",
-      "valueType" : "java.lang.Integer",
+      "name" : "ordNumber",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
       "testValue" : "10100",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    } ],
-    "returnTypeMetadata" : [ {
-      "element" : [ {
-        "name" : "shipDate",
-        "subType" : null,
-        "typeRef" : "java.sql.Date",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "ordNumber",
-        "subType" : null,
-        "typeRef" : "java.lang.Integer",
-        "isList" : false,
-        "allowNull" : null
-      } ],
-      "javaType" : "classicmodelsProcedure_OUT_IN_INOUTrtnType",
-      "name" : "classicmodelsProcedure_OUT_IN_INOUTrtnType"
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    }, {
+      "name" : "shipDate",
+      "type" : "date",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "2003-01-10",
+      "required" : false,
+      "parameterType" : "IN_OUT"
     } ]
-  }, {
-    "name" : "Procedure_OUT_IN_OUT",
-    "procedure" : "call getProductLine(:txtDesc,:prodLine,:htmlDesc)",
-    "comment" : "OUT - STRING\nIN - STRING\nOUT - STRING",
-    "description" : null,
-    "outputType" : "classicmodelsProcedure_OUT_IN_OUTrtnType",
-    "returnsSingleResult" : false,
-    "procedureParams" : [ {
-      "paramName" : "txtDesc",
-      "procedureParamType" : "OUT",
-      "valueType" : "java.lang.String",
-      "testValue" : "",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
+  },
+  "Procedure_WithoutAnyParams" : {
+    "procedureString" : "call test_mysql_loop()",
+    "parameters" : [ ]
+  },
+  "Procedure_INOUT_INOUT_INOUT" : {
+    "procedureString" : "call Divide_InOut_Inout_InOut(?,?,?)",
+    "parameters" : [ {
+      "name" : "numerator",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "22",
+      "required" : false,
+      "parameterType" : "IN_OUT"
     }, {
-      "paramName" : "prodLine",
-      "procedureParamType" : "IN",
-      "valueType" : "java.lang.String",
-      "testValue" : "Classic Cars",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
+      "name" : "denominator",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "11",
+      "required" : false,
+      "parameterType" : "IN_OUT"
     }, {
-      "paramName" : "htmlDesc",
-      "procedureParamType" : "OUT",
-      "valueType" : "java.lang.String",
-      "testValue" : "",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    } ],
-    "returnTypeMetadata" : [ {
-      "element" : [ {
-        "name" : "txtDesc",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "htmlDesc",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      } ],
-      "javaType" : "classicmodelsProcedure_OUT_IN_OUTrtnType",
-      "name" : "classicmodelsProcedure_OUT_IN_OUTrtnType"
+      "name" : "result1",
+      "type" : "double",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "33",
+      "required" : false,
+      "parameterType" : "IN_OUT"
     } ]
-  }, {
-    "name" : "Procedure_OUT_INOUT",
-    "procedure" : "call getProductLineItems(:txtDesc,:prodLine)",
-    "comment" : "OUT - STRING\nINOUT - STRING",
-    "description" : null,
-    "outputType" : "classicmodelsProcedure_OUT_INOUTrtnType",
-    "returnsSingleResult" : false,
-    "procedureParams" : [ {
-      "paramName" : "txtDesc",
-      "procedureParamType" : "OUT",
-      "valueType" : "java.lang.String",
+  },
+  "Procedure_OUT_IN_INOUT" : {
+    "procedureString" : "CALL getShippedDate_Out_In_Inout(?,?,?)",
+    "parameters" : [ {
+      "name" : "shipDate",
+      "type" : "date",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
       "testValue" : "",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
+      "required" : false,
+      "parameterType" : "OUT"
     }, {
-      "paramName" : "prodLine",
-      "procedureParamType" : "IN_OUT",
-      "valueType" : "java.lang.String",
-      "testValue" : "Classic Cars",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    } ],
-    "returnTypeMetadata" : [ {
-      "element" : [ {
-        "name" : "txtDesc",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "prodLine",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      } ],
-      "javaType" : "classicmodelsProcedure_OUT_INOUTrtnType",
-      "name" : "classicmodelsProcedure_OUT_INOUTrtnType"
-    } ]
-  }, {
-    "name" : "Procedure_OUT_INOUT_IN",
-    "procedure" : "call getShippedDate_Out_Inout_In(:shipDate,:reqDate,:ordNumber)",
-    "comment" : "OUT - DATE\nINOUT- DATE\nIN - INT",
-    "description" : null,
-    "outputType" : "classicmodelsProcedure_OUT_INOUT_INrtnType",
-    "returnsSingleResult" : false,
-    "procedureParams" : [ {
-      "paramName" : "shipDate",
-      "procedureParamType" : "OUT",
-      "valueType" : "java.sql.Date",
-      "testValue" : "",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "reqDate",
-      "procedureParamType" : "IN_OUT",
-      "valueType" : "java.sql.Date",
+      "name" : "reqDate",
+      "type" : "date",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
       "testValue" : "2003-01-13",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
+      "required" : false,
+      "parameterType" : "IN"
     }, {
-      "paramName" : "ordNumber",
-      "procedureParamType" : "IN",
-      "valueType" : "java.lang.Integer",
+      "name" : "ordNumber",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
       "testValue" : "10100",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    } ],
-    "returnTypeMetadata" : [ {
-      "element" : [ {
-        "name" : "shipDate",
-        "subType" : null,
-        "typeRef" : "java.sql.Date",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "reqDate",
-        "subType" : null,
-        "typeRef" : "java.sql.Date",
-        "isList" : false,
-        "allowNull" : null
-      } ],
-      "javaType" : "classicmodelsProcedure_OUT_INOUT_INrtnType",
-      "name" : "classicmodelsProcedure_OUT_INOUT_INrtnType"
+      "required" : false,
+      "parameterType" : "IN_OUT"
     } ]
-  }, {
-    "name" : "Procedure_OUT_INOUT_INOUT",
-    "procedure" : "CALL getShippedDate_Out_Inout_Inout(:shipDate,:reqDate,:ordNumber)",
-    "comment" : "OUT - DATE\nINOUT - DATE\nINOUT - INT",
-    "description" : null,
-    "outputType" : "classicmodelsProcedure_OUT_INOUT_INOUTrtnType",
-    "returnsSingleResult" : false,
-    "procedureParams" : [ {
-      "paramName" : "shipDate",
-      "procedureParamType" : "OUT",
-      "valueType" : "java.sql.Date",
-      "testValue" : "",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "reqDate",
-      "procedureParamType" : "IN_OUT",
-      "valueType" : "java.sql.Date",
-      "testValue" : "2003-01-13",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "ordNumber",
-      "procedureParamType" : "IN_OUT",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "10100",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    } ],
-    "returnTypeMetadata" : [ {
-      "element" : [ {
-        "name" : "shipDate",
-        "subType" : null,
-        "typeRef" : "java.sql.Date",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "reqDate",
-        "subType" : null,
-        "typeRef" : "java.sql.Date",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "ordNumber",
-        "subType" : null,
-        "typeRef" : "java.lang.Integer",
-        "isList" : false,
-        "allowNull" : null
-      } ],
-      "javaType" : "classicmodelsProcedure_OUT_INOUT_INOUTrtnType",
-      "name" : "classicmodelsProcedure_OUT_INOUT_INOUTrtnType"
-    } ]
-  }, {
-    "name" : "Procedure_OUT_INOUT_OUT",
-    "procedure" : "call getProducts(:prodName,:prodCode,:prodDesc)",
-    "comment" : "OUT - STRING\nINOUT - STRING\nOUT - STRING",
-    "description" : null,
-    "outputType" : "classicmodelsProcedure_OUT_INOUT_OUTrtnType",
-    "returnsSingleResult" : false,
-    "procedureParams" : [ {
-      "paramName" : "prodName",
-      "procedureParamType" : "OUT",
-      "valueType" : "java.lang.String",
-      "testValue" : "",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "prodCode",
-      "procedureParamType" : "IN_OUT",
-      "valueType" : "java.lang.String",
-      "testValue" : "S10_1678",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "prodDesc",
-      "procedureParamType" : "OUT",
-      "valueType" : "java.lang.String",
-      "testValue" : "",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    } ],
-    "returnTypeMetadata" : [ {
-      "element" : [ {
-        "name" : "prodName",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "prodCode",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "prodDesc",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      } ],
-      "javaType" : "classicmodelsProcedure_OUT_INOUT_OUTrtnType",
-      "name" : "classicmodelsProcedure_OUT_INOUT_OUTrtnType"
-    } ]
-  }, {
-    "name" : "Procedure_OUT_OUT",
-    "procedure" : "call getEmployee12(:empFName,:empLName)",
-    "comment" : "OUT - STRING\nOUT - STRING",
-    "description" : null,
-    "outputType" : "classicmodelsProcedure_OUT_OUTrtnType",
-    "returnsSingleResult" : false,
-    "procedureParams" : [ {
-      "paramName" : "empFName",
-      "procedureParamType" : "OUT",
-      "valueType" : "java.lang.String",
-      "testValue" : "",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "empLName",
-      "procedureParamType" : "OUT",
-      "valueType" : "java.lang.String",
-      "testValue" : "",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    } ],
-    "returnTypeMetadata" : [ {
-      "element" : [ {
-        "name" : "empFName",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "empLName",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      } ],
-      "javaType" : "classicmodelsProcedure_OUT_OUTrtnType",
-      "name" : "classicmodelsProcedure_OUT_OUTrtnType"
-    } ]
-  }, {
-    "name" : "Procedure_OUT_OUT_IN",
-    "procedure" : "call getOfficeAddress(:addrLine1,:addrLine2,:offCode)",
-    "comment" : "OUT - STRING\nOUT - STRING\nIN - INT",
-    "description" : null,
-    "outputType" : "classicmodelsProcedure_OUT_OUT_INrtnType",
-    "returnsSingleResult" : false,
-    "procedureParams" : [ {
-      "paramName" : "addrLine1",
-      "procedureParamType" : "OUT",
-      "valueType" : "java.lang.String",
-      "testValue" : "",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "addrLine2",
-      "procedureParamType" : "OUT",
-      "valueType" : "java.lang.String",
-      "testValue" : "",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "offCode",
-      "procedureParamType" : "IN",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "1",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    } ],
-    "returnTypeMetadata" : [ {
-      "element" : [ {
-        "name" : "addrLine1",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "addrLine2",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      } ],
-      "javaType" : "classicmodelsProcedure_OUT_OUT_INrtnType",
-      "name" : "classicmodelsProcedure_OUT_OUT_INrtnType"
-    } ]
-  }, {
-    "name" : "Procedure_OUT_OUT_INOUT",
-    "procedure" : "call getEmployeeByID(:empFirstName,:empExtension,:empNumber)",
-    "comment" : "OUT - STRING\nOUT - STRING \nINOUT - INT",
-    "description" : null,
-    "outputType" : "classicmodelsProcedure_OUT_OUT_INOUTrtnType",
-    "returnsSingleResult" : false,
-    "procedureParams" : [ {
-      "paramName" : "empFirstName",
-      "procedureParamType" : "OUT",
-      "valueType" : "java.lang.String",
-      "testValue" : "",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "empExtension",
-      "procedureParamType" : "OUT",
-      "valueType" : "java.lang.String",
-      "testValue" : "",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "empNumber",
-      "procedureParamType" : "IN_OUT",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "1002",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    } ],
-    "returnTypeMetadata" : [ {
-      "element" : [ {
-        "name" : "empFirstName",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "empExtension",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "empNumber",
-        "subType" : null,
-        "typeRef" : "java.lang.Integer",
-        "isList" : false,
-        "allowNull" : null
-      } ],
-      "javaType" : "classicmodelsProcedure_OUT_OUT_INOUTrtnType",
-      "name" : "classicmodelsProcedure_OUT_OUT_INOUTrtnType"
-    } ]
-  }, {
-    "name" : "Procedure_OUT_OUT_OUT",
-    "procedure" : "call get_order_count(:Ship, :Cancel, :Resolve, :Dispute, :InProcess, :OnHold)",
-    "comment" : "OUT - INT\nOUT - INT\nOUT - INT\nOUT - INT\nOUT - INT\nOUT - INT",
-    "description" : null,
-    "outputType" : "classicmodelsProcedure_OUT_OUT_OUTrtnType",
-    "returnsSingleResult" : false,
-    "procedureParams" : [ {
-      "paramName" : "Ship",
-      "procedureParamType" : "OUT",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "Cancel",
-      "procedureParamType" : "OUT",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "Resolve",
-      "procedureParamType" : "OUT",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "Dispute",
-      "procedureParamType" : "OUT",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "InProcess",
-      "procedureParamType" : "OUT",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    }, {
-      "paramName" : "OnHold",
-      "procedureParamType" : "OUT",
-      "valueType" : "java.lang.Integer",
-      "testValue" : "",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    } ],
-    "returnTypeMetadata" : [ {
-      "element" : [ {
-        "name" : "Ship",
-        "subType" : null,
-        "typeRef" : "java.lang.Integer",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "Cancel",
-        "subType" : null,
-        "typeRef" : "java.lang.Integer",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "Resolve",
-        "subType" : null,
-        "typeRef" : "java.lang.Integer",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "Dispute",
-        "subType" : null,
-        "typeRef" : "java.lang.Integer",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "InProcess",
-        "subType" : null,
-        "typeRef" : "java.lang.Integer",
-        "isList" : false,
-        "allowNull" : null
-      }, {
-        "name" : "OnHold",
-        "subType" : null,
-        "typeRef" : "java.lang.Integer",
-        "isList" : false,
-        "allowNull" : null
-      } ],
-      "javaType" : "classicmodelsProcedure_OUT_OUT_OUTrtnType",
-      "name" : "classicmodelsProcedure_OUT_OUT_OUTrtnType"
-    } ]
-  }, {
-    "name" : "Procedure_Sysparam",
-    "procedure" : "call GetCustomerShippingCase(:_SYSTEM_CURRENT_USER_ID,:p_shipping)",
-    "comment" : "Procedure_Sysparam",
-    "description" : null,
-    "outputType" : null,
-    "returnsSingleResult" : false,
-    "procedureParams" : [ {
-      "paramName" : "CustomerNumber",
-      "procedureParamType" : "IN",
-      "valueType" : "java.lang.String",
+  },
+  "Procedure_IN_INOUT" : {
+    "procedureString" : "call getCustomerLevel_In_Inout(?,?)",
+    "parameters" : [ {
+      "name" : "custnum",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
       "testValue" : "103",
-      "systemParamName" : "CURRENT_USER_ID",
-      "systemParam" : true,
-      "list" : false
+      "required" : false,
+      "parameterType" : "IN"
     }, {
-      "paramName" : "p_shipping",
-      "procedureParamType" : "OUT",
-      "valueType" : "java.lang.String",
+      "name" : "customerLevel",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "xxx",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    } ]
+  },
+  "Procedure_IN_IN" : {
+    "procedureString" : "call getEmployeesByNumber(?,?)",
+    "parameters" : [ {
+      "name" : "empFName",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "Diane",
+      "required" : false,
+      "parameterType" : "IN"
+    }, {
+      "name" : "empNumber",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "1002",
+      "required" : false,
+      "parameterType" : "IN"
+    } ]
+  },
+  "Procedure_INOUT_INOUT" : {
+    "procedureString" : "call getCustomerLevel_Inout_Inout(?,?)",
+    "parameters" : [ {
+      "name" : "custnum",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "103",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    }, {
+      "name" : "customerLevel",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "xxx",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    } ]
+  },
+  "Procedure_INOUT_INOUT_OUT" : {
+    "procedureString" : "call Divide_InOut_Inout_Out(?,?,?)",
+    "parameters" : [ {
+      "name" : "numerator",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "22",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    }, {
+      "name" : "denominator",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "11",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    }, {
+      "name" : "result1",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
       "testValue" : "",
-      "systemParamName" : null,
-      "systemParam" : false,
-      "list" : false
-    } ],
-    "returnTypeMetadata" : [ {
-      "element" : [ {
-        "name" : "p_shipping",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      } ],
-      "javaType" : "classicmodelsProcedure_SysparamrtnType",
-      "name" : "classicmodelsProcedure_SysparamrtnType"
+      "required" : false,
+      "parameterType" : "OUT"
     } ]
-  }, {
-    "name" : "Procedure_WithoutAnyParams",
-    "procedure" : "call test_mysql_loop()",
-    "comment" : "Without Any Params",
-    "description" : null,
-    "outputType" : "classicmodelsProcedure_WithoutAnyParamsrtnType",
-    "returnsSingleResult" : false,
-    "procedureParams" : [ ],
-    "returnTypeMetadata" : [ {
-      "element" : [ {
-        "name" : "str",
-        "subType" : null,
-        "typeRef" : "java.lang.String",
-        "isList" : false,
-        "allowNull" : null
-      } ],
-      "javaType" : "classicmodelsProcedure_WithoutAnyParamsrtnType",
-      "name" : "classicmodelsProcedure_WithoutAnyParamsrtnType"
+  },
+  "Procedure_IN_IsList" : {
+    "procedureString" : "call getCustomerList(?)",
+    "parameters" : [ {
+      "name" : "custNumber",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "103,112",
+      "required" : false,
+      "parameterType" : "IN"
     } ]
-  } ]
+  },
+  "Procedure_OUT_IN_OUT" : {
+    "procedureString" : "call getProductLine(?,?,?)",
+    "parameters" : [ {
+      "name" : "txtDesc",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "prodLine",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "Classic Cars",
+      "required" : false,
+      "parameterType" : "IN"
+    }, {
+      "name" : "htmlDesc",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    } ]
+  },
+  "Procedure_IN_OUT_OUT" : {
+    "procedureString" : "call get_order_by_cust(?,?, ?, ?, ?, ?, ?)",
+    "parameters" : [ {
+      "name" : "cutomerNumber",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "103",
+      "required" : false,
+      "parameterType" : "IN"
+    }, {
+      "name" : "Ship",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "Cancel",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "Resolve",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "Dispute",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "InProcess",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "OnHold",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    } ]
+  },
+  "Procedure_Sysparam" : {
+    "procedureString" : "call GetCustomerShippingCase(?,?)",
+    "parameters" : [ {
+      "name" : "CustomerNumber",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "SERVER",
+      "variableName" : "USER_ID",
+      "testValue" : "103",
+      "required" : false,
+      "parameterType" : "IN"
+    }, {
+      "name" : "p_shipping",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    } ]
+  },
+  "Procedure_IN_OUT_INOUT" : {
+    "procedureString" : "call Divide_In_Out_InOut(?,?,?)",
+    "parameters" : [ {
+      "name" : "numerator",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "21",
+      "required" : false,
+      "parameterType" : "IN"
+    }, {
+      "name" : "result1",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "denominator",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "3",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    } ]
+  },
+  "Procedure_OUT_INOUT_OUT" : {
+    "procedureString" : "call getProducts(?,?,?)",
+    "parameters" : [ {
+      "name" : "prodName",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "prodCode",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "S10_1678",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    }, {
+      "name" : "prodDesc",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    } ]
+  },
+  "Procedure_OUT_IN" : {
+    "procedureString" : "call getEmpFName(?,?)",
+    "parameters" : [ {
+      "name" : "empFName",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "empNumber",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "1002",
+      "required" : false,
+      "parameterType" : "IN"
+    } ]
+  },
+  "Procedure_OUT_INOUT_IN" : {
+    "procedureString" : "call getShippedDate_Out_Inout_In(?,?,?)",
+    "parameters" : [ {
+      "name" : "shipDate",
+      "type" : "date",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "reqDate",
+      "type" : "date",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "2003-01-13",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    }, {
+      "name" : "ordNumber",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "10100",
+      "required" : false,
+      "parameterType" : "IN"
+    } ]
+  },
+  "Procedure_OUT_OUT" : {
+    "procedureString" : "call getEmployee12(?,?)",
+    "parameters" : [ {
+      "name" : "empFName",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "empLName",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    } ]
+  },
+  "Procedure_INOUT_OUT_IN" : {
+    "procedureString" : "call Divide_InOut_out_In(?,?,?)",
+    "parameters" : [ {
+      "name" : "numerator",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "22",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    }, {
+      "name" : "result1",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "denominator",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "11",
+      "required" : false,
+      "parameterType" : "IN"
+    } ]
+  },
+  "Procedure_IN_IN_OUT" : {
+    "procedureString" : "call classicmodels.getShippedDate(?,?, ?)",
+    "parameters" : [ {
+      "name" : "RequiredDate",
+      "type" : "date",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "2003-01-18",
+      "required" : false,
+      "parameterType" : "IN"
+    }, {
+      "name" : "OrderNumber",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "10102",
+      "required" : false,
+      "parameterType" : "IN"
+    }, {
+      "name" : "shipDate",
+      "type" : "date",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    } ]
+  },
+  "Procedure_OUT_INOUT" : {
+    "procedureString" : "call getProductLineItems(?,?)",
+    "parameters" : [ {
+      "name" : "txtDesc",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "prodLine",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "Classic Cars",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    } ]
+  },
+  "Procedure_INOUT_OUT_INOUT" : {
+    "procedureString" : "call Divide_InOut_out_Inout(?,?,?)",
+    "parameters" : [ {
+      "name" : "numerator",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "22",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    }, {
+      "name" : "result1",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "denominator",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "11",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    } ]
+  },
+  "Procedure_OUT_INOUT_INOUT" : {
+    "procedureString" : "CALL getShippedDate_Out_Inout_Inout(?,?,?)",
+    "parameters" : [ {
+      "name" : "shipDate",
+      "type" : "date",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "reqDate",
+      "type" : "date",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "2003-01-13",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    }, {
+      "name" : "ordNumber",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "10100",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    } ]
+  },
+  "Procedure_INOUT_IN" : {
+    "procedureString" : "call classicmodels.getShippedDate2(?, ?)",
+    "parameters" : [ {
+      "name" : "GiveRequiredDateGetShippedDate",
+      "type" : "date",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "2003-01-13",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    }, {
+      "name" : "orderNumber",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "10100",
+      "required" : false,
+      "parameterType" : "IN"
+    } ]
+  },
+  "Procedure_OUT_OUT_OUT" : {
+    "procedureString" : "call get_order_count(?, ?, ?, ?, ?, ?)",
+    "parameters" : [ {
+      "name" : "Ship",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "Cancel",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "Resolve",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "Dispute",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "InProcess",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "OnHold",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    } ]
+  },
+  "Procedure_IN_INOUT_OUT" : {
+    "procedureString" : "call getShippedDate_In_InOut_Out(?,?,?)",
+    "parameters" : [ {
+      "name" : "reqDate",
+      "type" : "date",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "2003-01-13",
+      "required" : false,
+      "parameterType" : "IN"
+    }, {
+      "name" : "ordNumber",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "10100",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    }, {
+      "name" : "shipDate",
+      "type" : "date",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    } ]
+  },
+  "Procedure_OUT_OUT_INOUT" : {
+    "procedureString" : "call getEmployeeByID(?,?,?)",
+    "parameters" : [ {
+      "name" : "empFirstName",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "empExtension",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "empNumber",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "1002",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    } ]
+  },
+  "Procedure_IN_IN_INOUT" : {
+    "procedureString" : "CALL GetShippedDate3_InInInOut(?,?,?)",
+    "parameters" : [ {
+      "name" : "reqDate",
+      "type" : "date",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "2003-01-13",
+      "required" : false,
+      "parameterType" : "IN"
+    }, {
+      "name" : "ordNumber",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "10100",
+      "required" : false,
+      "parameterType" : "IN"
+    }, {
+      "name" : "shipDate",
+      "type" : "date",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "2003-01-10",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    } ]
+  },
+  "Procedure_OUT" : {
+    "procedureString" : "call getEmployeeEmailByID1002(?)",
+    "parameters" : [ {
+      "name" : "empEmail",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    } ]
+  },
+  "Procedure_IN_STRING" : {
+    "procedureString" : "call classicmodels.GetOfficeByCountry(?)",
+    "parameters" : [ {
+      "name" : "countryname",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "USA",
+      "required" : false,
+      "parameterType" : "IN"
+    } ]
+  },
+  "Procedure_INOUT" : {
+    "procedureString" : "call getEmpNumber(?)",
+    "parameters" : [ {
+      "name" : "empNumber",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "1002",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    } ]
+  },
+  "Procedure_INOUT_OUT" : {
+    "procedureString" : "call getCustomerLevel_Inout_out(?,?)",
+    "parameters" : [ {
+      "name" : "custnum",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "103",
+      "required" : false,
+      "parameterType" : "IN_OUT"
+    }, {
+      "name" : "customerLevel",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    } ]
+  },
+  "Procedure_OUT_OUT_IN" : {
+    "procedureString" : "call getOfficeAddress(?,?,?)",
+    "parameters" : [ {
+      "name" : "addrLine1",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "addrLine2",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "offCode",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "1",
+      "required" : false,
+      "parameterType" : "IN"
+    } ]
+  },
+  "PROCEDURE_IN_OUT_IN" : {
+    "procedureString" : "call classicmodels.Divide2(?,?,?)",
+    "parameters" : [ {
+      "name" : "Numerator",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "15",
+      "required" : false,
+      "parameterType" : "IN"
+    }, {
+      "name" : "Result",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "",
+      "required" : false,
+      "parameterType" : "OUT"
+    }, {
+      "name" : "Denominator",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "3",
+      "required" : false,
+      "parameterType" : "IN"
+    } ]
+  },
+  "Procedure_IN" : {
+    "procedureString" : "call getEmpDetails(?)",
+    "parameters" : [ {
+      "name" : "empNumber",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "1002",
+      "required" : false,
+      "parameterType" : "IN"
+    } ]
+  },
+  "Procedure_IN_IN_IN" : {
+    "procedureString" : "call insert_article_tags(?, ?, ?)",
+    "parameters" : [ {
+      "name" : "art_id",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "1",
+      "required" : false,
+      "parameterType" : "IN"
+    }, {
+      "name" : "tag_id",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "4",
+      "required" : false,
+      "parameterType" : "IN"
+    }, {
+      "name" : "blnak",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "test2",
+      "required" : false,
+      "parameterType" : "IN"
+    } ]
+  },
+  "Procedure_getProductDetails" : {
+    "procedureString" : "call classicmodels.getProductDetails(?)",
+    "parameters" : [ {
+      "name" : "prodLine",
+      "type" : "string",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : null,
+      "testValue" : "Classic Cars",
+      "required" : false,
+      "parameterType" : "IN"
+    } ]
+  }
 }

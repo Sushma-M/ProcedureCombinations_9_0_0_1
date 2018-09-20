@@ -10,16 +10,8 @@ import java.util.Objects;
 
 public class Mytable2Id implements Serializable {
 
-    private Integer id;
     private Integer col1;
-
-    public Integer getId() {
-        return this.id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
+    private Integer id;
 
     public Integer getCol1() {
         return this.col1;
@@ -29,18 +21,26 @@ public class Mytable2Id implements Serializable {
         this.col1 = col1;
     }
 
+    public Integer getId() {
+        return this.id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Mytable2)) return false;
         final Mytable2 mytable2 = (Mytable2) o;
-        return Objects.equals(getId(), mytable2.getId()) &&
-                Objects.equals(getCol1(), mytable2.getCol1());
+        return Objects.equals(getCol1(), mytable2.getCol1()) &&
+                Objects.equals(getId(), mytable2.getId());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getId(),
-                getCol1());
+        return Objects.hash(getCol1(),
+                getId());
     }
 }

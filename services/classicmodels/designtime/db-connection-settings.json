@@ -11,7 +11,55 @@
   "dbName" : "classicmodels",
   "port" : "3306",
   "schemaName" : null,
-  "tableFilter" : [ ],
+  "tableFilter" : [ {
+    "table" : "TempTimeCheck",
+    "schema" : null
+  }, {
+    "table" : "article_tags",
+    "schema" : null
+  }, {
+    "table" : "article_tagssx",
+    "schema" : null
+  }, {
+    "table" : "customers",
+    "schema" : null
+  }, {
+    "table" : "employees",
+    "schema" : null
+  }, {
+    "table" : "identityTest",
+    "schema" : null
+  }, {
+    "table" : "mytable",
+    "schema" : null
+  }, {
+    "table" : "mytable2",
+    "schema" : null
+  }, {
+    "table" : "offices",
+    "schema" : null
+  }, {
+    "table" : "orderdetails",
+    "schema" : null
+  }, {
+    "table" : "orders",
+    "schema" : null
+  }, {
+    "table" : "payments",
+    "schema" : null
+  }, {
+    "table" : "productlines",
+    "schema" : null
+  }, {
+    "table" : "products",
+    "schema" : null
+  }, {
+    "table" : "testIssue",
+    "schema" : null
+  }, {
+    "table" : "user",
+    "schema" : null
+  } ],
   "schemaFilter" : [ ".*" ],
   "impersonateUser" : false,
   "activeDirectoryDomain" : null,
@@ -23,9 +71,9 @@
   "dataSourceType" : "WM_MANAGED_DATASOURCE",
   "jndiName" : "",
   "reloadInfo" : {
-    "reload" : true,
-    "reason" : "MIGRATION_FAILED",
-    "message" : "Source code re-generation needed with respect to spring upgrade"
+    "reload" : false,
+    "reason" : null,
+    "message" : null
   },
   "readOnly" : false
 }
